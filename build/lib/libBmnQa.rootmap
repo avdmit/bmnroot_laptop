@@ -1,0 +1,21 @@
+[ BmnQa.so ]
+# List of selected classes
+class BmnAcceptanceFunction
+class BmnClusteringQa
+class BmnClusteringQaReport
+class BmnHistManager
+class BmnHtmlReportElement
+class BmnMCPoint
+class BmnMCTrack
+class BmnMCTrackCreator
+class BmnMatchRecoToMC
+class BmnReport
+class BmnReportElement
+class BmnSimulationReport
+class BmnStudyReport
+class BmnTrackingQa
+class BmnTrackingQaReport
+header BmnMCPoint.h
+header BmnReport.h
+header BmnReportElement.h
+header BmnSimulationReport.h

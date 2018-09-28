@@ -1,0 +1,9 @@
+[ TOF.so ]
+# List of selected classes
+class BmnTOF
+class BmnTOFContFact
+class BmnTOFGeo
+class BmnTOFGeoPar
+class BmnTOFPoint
+class BmnTofHitProducer
+class BmnTofHitProducerIdeal

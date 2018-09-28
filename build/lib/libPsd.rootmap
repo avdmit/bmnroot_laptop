@@ -1,0 +1,9 @@
+[ Psd.so ]
+# List of selected classes
+class CbmGeoPsd
+class CbmGeoPsdPar
+class CbmPsd
+class CbmPsdHitProducer
+class CbmPsdIdealDigitizer
+class CbmPsdReactionPlaneMaker
+class CbmPsdv1

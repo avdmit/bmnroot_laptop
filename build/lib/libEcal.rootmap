@@ -1,0 +1,7 @@
+[ Ecal.so ]
+# List of selected classes
+class BmnEcal
+class BmnEcalContFact
+class BmnEcalGeo
+class BmnEcalGeoPar
+class BmnEcalPoint

@@ -1,0 +1,12 @@
+[ BmnField.so ]
+# List of selected classes
+class BmnFieldConst
+class BmnFieldContFact
+class BmnFieldCreator
+class BmnFieldMap
+class BmnFieldMapCreator
+class BmnFieldMapData
+class BmnFieldMapSym3
+class BmnFieldPar
+class BmnNewFieldMap
+class BmnSP41FieldMapCreator

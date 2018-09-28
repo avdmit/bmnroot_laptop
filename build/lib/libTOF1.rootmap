@@ -1,0 +1,15 @@
+[ TOF1.so ]
+# List of selected classes
+class BmnTOF1
+class BmnTOF1ContFact
+class BmnTOF1Conteiner
+class BmnTOF1Detector
+class BmnTOF1Geo
+class BmnTOF1GeoPar
+class BmnTOF1Point
+class BmnTof1Configure
+class BmnTof1DigitConvertor
+class BmnTof1HitProducer
+class BmnTof1HitProducerIdeal
+class BmnTof1TDC
+class BmnTof1TDCMapping

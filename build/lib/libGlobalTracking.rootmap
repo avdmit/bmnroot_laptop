@@ -1,0 +1,6 @@
+[ GlobalTracking.so ]
+# List of selected classes
+class BmnDetectorSetup
+class BmnGlobalTracking
+class BmnTriggersCheck
+class BmnVertexFinder

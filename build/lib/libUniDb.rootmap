@@ -1,0 +1,30 @@
+[ UniDb.so ]
+# List of selected classes
+class DchMapStructure
+class ElogDbAttachment
+class ElogDbBeam
+class ElogDbPerson
+class ElogDbRecord
+class ElogDbTarget
+class ElogDbTrigger
+class ElogDbType
+class GemMapStructure
+class GemPedestalStructure
+class IIStructure
+class LorentzShiftStructure
+class TangoTimeInterval
+class TangoTimeParameter
+class TriggerMapStructure
+class UniDbConnection
+class UniDbDetector
+class UniDbDetectorParameter
+class UniDbGenerateClasses
+class UniDbGeoConverter
+class UniDbParameter
+class UniDbRun
+class UniDbRunGeometry
+class UniDbRunPeriod
+class UniDbSearchCondition
+class UniDbSimulationFile
+class UniDbTangoData
+class UniqueRunNumber

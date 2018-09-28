@@ -1,0 +1,35 @@
+[ Sts.so ]
+# List of selected classes
+class CbmGeoSts
+class CbmGeoStsPar
+class CbmSts
+class CbmStsClusterFinder
+class CbmStsContFact
+class CbmStsDigiPar
+class CbmStsDigiScheme
+class CbmStsDigitize
+class CbmStsDigitizeTb
+class CbmStsFindHits
+class CbmStsFindHitsQa
+class CbmStsFindTracks
+class CbmStsFindTracksQa
+class CbmStsFitTracks
+class CbmStsHitProducerIdeal
+class CbmStsIdealDigitize
+class CbmStsIdealFindHits
+class CbmStsIdealMatchHits
+class CbmStsMatchHits
+class CbmStsMatchTracks
+class CbmStsParAsciiFileIo
+class CbmStsParRootFileIo
+class CbmStsRadTool
+class CbmStsReconstructionQa
+class CbmStsSector
+class CbmStsSectorDigiPar
+class CbmStsSensor
+class CbmStsSensorDigiPar
+class CbmStsSimulationQa
+class CbmStsStation
+class CbmStsStationDigiPar
+class CbmStsTrackFinderIdeal
+class CbmStsTrackFitterIdeal

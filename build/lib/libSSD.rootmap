@@ -1,0 +1,4 @@
+[ SSD.so ]
+# List of selected classes
+class BmnSSD
+class BmnSSDPoint

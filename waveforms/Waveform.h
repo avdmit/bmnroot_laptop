@@ -1,145 +1,93 @@
 //------------------------------------------------------------------------------------------------------------------------
 // -------------------------------------------------------------------------
-// -----                         BmnMWPC header file                    -----
+// -----                         Waveform header file                    -----
 // -------------------------------------------------------------------------
 
-/*
- ** Defines the active detector MWPC. Constructs the geometry and
- ** registeres MCPoints.
-**/
+
+#ifndef WAVEFORM_H
+#define WAVEFORM_H
 
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <fstream>
+#include <istream>
+#include <ostream>
+#include <iostream>
+#include <TMath.h>
+#include <TClonesArray.h>
+#include <vector>
+#include <TGraph.h>
+#include <TCanvas.h>
+#include <TVectorT.h>
+#include <TTree.h>
+#include <float.h>
+#include <TH2D.h>
+#include <TF1.h>
 
-#ifndef BMNMWPC_H
-#define BMNMWPC_H
-
-#include "TClonesArray.h"
-#include "TLorentzVector.h"
-#include "TVector3.h"
-#include "FairDetector.h"
-#include "TGeoMedium.h"
-#include "TString.h"
-#include <map>
 using namespace std;
 
-class BmnMwpcPoint;
-class FairVolume;
-
 //------------------------------------------------------------------------------------------------------------------------
-class BmnMwpc : public FairDetector
-{
 
+class Waveform {
 public:
 
-   	// *@param name    detector name
-   	// *@param active  sensitivity flag
-  	BmnMwpc(const char* name, Bool_t active);
+    /** Default constructor **/
+    Waveform();
 
-	BmnMwpc();
-	virtual ~BmnMwpc();
+    /** Destructor **/
+    virtual ~Waveform();
 
-	// Defines the action to be taken when a step is inside the
-	// active volume. Creates BmnMWPC1Points and adds them to the collection.
-	// @param vol  Pointer to the active volume
-        virtual Bool_t  ProcessHits(FairVolume* vol = 0);
+    void Init(Short_t, Bool_t, Bool_t, Bool_t);
+    Bool_t Main(Char_t*, Int_t/*, TTree*/);
+    void Draw();
+    void NextFile();
 
-   	// If verbosity level is set, print hit collection at the
-   	// end of the event and resets it afterwards.
-  	virtual void EndOfEvent();
+    vector<TGraph*> GetGraphs() {
+        return fGraphs;
+    }
 
-   	// Registers the hit collection in the ROOT manager.
-  	virtual void Register();
+    vector<TH2D*> GetTimeVsAmp() {
+        return TimeVsAmp;
+    }
 
-  	// Accessor to the hit collection 
-  	virtual TClonesArray* GetCollection(Int_t iColl) const;
+    vector<TH2D*> GetDeltaTimeVsAmp() {
+        return DeltaTimeVsAmp;
+    }
 
-   	// Screen output of hit collection.
-	virtual void Print() const;
-
-   	// Clears the hit collection
-	virtual void Reset();
-
-	// *@param cl1     Origin
-	// *@param cl2     Target
-	// *@param offset  Index offset
- 	virtual void CopyClones(TClonesArray* cl1, TClonesArray* cl2, Int_t offset);
-
-	// Constructs the MWPC1 geometry
- 	virtual void ConstructGeometry();
-    // Construct the geometry from an ASCII geometry file
-    virtual void ConstructAsciiGeometry();
-    // Construct the geometry from a GDML geometry file
-    virtual void ConstructGDMLGeometry();
-    void ExpandNodeForGdml(TGeoNode* node);
-    map<TString, TGeoMedium*> fFixedMedia; // List of media "repaired" after importing GMDL
-  
-    // Check whether a volume is sensitive.
-    // The decision is based on the volume name. Only used in case
-    // of GDML and ROOT geometry.
-    // @param name    Volume name
-    // @value         kTRUE if volume is sensitive, else kFALSE
-    virtual Bool_t CheckIfSensitive(std::string name);
- 
-    static Int_t GetWheel(Int_t uid){ return ((uid-1) >>3); };  //lsp  [0-1] == [inner,outer]
-   	static Int_t GetProj(Int_t uid){ return ((uid-1) & 6)>>1; }; //lsp [0-3] == [x,y,u,v] 
- 	static Int_t GetGasGap(Int_t uid){ return ((uid-1) & 0x0001); }; //lsp [0-1] == [inner,outer] 
-  
 private:
-
-	// Track information to be stored until the track leaves the active volume.
-  	Int_t          fTrackID;           //!  track index
-  	Int_t          fVolumeID;          //!  volume id
-  	TVector3       fPos;               //!  position
-  	TVector3       fPosLocal;          //!  position local to gas chamber
-  	TLorentzVector fMom;               //!  momentum
-  	Double32_t     fTime;              //!  time
-  	Double32_t     fLength;            //!  length
-  	Double32_t     fELoss;             //!  energy loss
-  	Int_t	       fIsPrimary; 	   //! is track primary?	
-  	Double_t       fCharge;		   //! track charge
-  	Double_t       fRadius;		   //! hit radius
-  	Int_t          fPdgId;             //! pdg id of particle
-  	Int_t          fwheel;
-  	TVector3 fPosIn;             //!  entry position in global frame                                                                    
-  	TVector3 fPosOut;            //!  exit position in global frame 
-	                                                                    
-    TVector3 fPosInTmp;             //!  entry position in global frame
-	Int_t    fTrackIDTmp;           //!  track index
-	Int_t fwheelTmp;
-
-	Int_t fPosIndex;                   //!
-  	TClonesArray* fPointCollection;      //! Hit collection
-
-	int DistAndPoints(TVector3 p3, TVector3 p4, TVector3& pa, TVector3& pb);
-        TVector3 GlobalToLocal(TVector3& global);
-        TVector3 LocalToGlobal(TVector3& local);
-        
-	// Adds a BmnMWPC1Point to the HitCollection
-  	BmnMwpcPoint* AddHit(Int_t trackID, Int_t detID, TVector3 pos, Double_t radius, TVector3 mom, Double_t time, 
-  	Double_t length, Double_t eLoss, Int_t isPrimary, Double_t charge, Int_t fPdgId, TVector3 trackPos); 
- 
-	// Resets the private members for the track parameters
-  	void ResetParameters();
+    static const Short_t kMaxWavefoms = 4;
+    TString fName;
+    vector<TGraph*> fGraphs;
+    vector<Double_t> kMaximum, kMinimum;
+    //    vector<Double_t> kMaximumDif, kMinimumDif;
+    Double_t maxTime, minTime, TimeDiff;
+    TGraph * CiDif[kMaxWavefoms / 2];
 
 
-  ClassDef(BmnMwpc,1) 
+    vector<TH2D*> DeltaTimeVsAmp;
+    vector<TH2D*> TimeVsAmp;
+    Short_t number_event1, number_event2, number_event3, number_event4, number_event5;
+    Bool_t FirstRead, DiffSig, MakeTHs;
+    Char_t name1[100], nameJPG[100], str1[256], str2[256];
+    Short_t nFile;
+    Short_t nPoints;
+    //    Double_t C_T, C_AMP;
+    //    vector<vector<Double_t>> C_Tvector;
+    //    vector<vector<Double_t>> C_AMPvector;
+    //    vector<vector<Double_t>> C_TvectorDiff;
+    //    vector<vector<Double_t>> C_AMPvectorDiff;
+    //        vector<Double_t> fMax, kMax;
+    TTree fTree4Save;
+    TClonesArray fArrayConteiner;
+
+    void FindSecondMax();
+    vector<TGraph*> DiffSignal(vector<TGraph*>, Double_t*, Double_t*);
+    vector<Double_t> PreciseFindMax(vector<Double_t>);
+    vector<Double_t> FindBaseLane();
+    ClassDef(Waveform, 2)
 
 };
 
-//------------------------------------------------------------------------------------------------------------------------
-inline void BmnMwpc::ResetParameters() 
-{
-	fTrackID = -1;
-	fVolumeID = fwheel = 0;
-	fPos.SetXYZ(0.0, 0.0, 0.0);
-	fMom.SetXYZM(0.0, 0.0, 0.0, 0.0);
-	fTime = fLength = fELoss = 0;
-	fPosIndex = 0;
-       	
-	fPosInTmp.SetXYZ(0.0, 0.0, 0.0);
-        fTrackIDTmp=-1;
-        fwheelTmp=-1;
-
-}
 //------------------------------------------------------------------------------------------------------------------------
 #endif

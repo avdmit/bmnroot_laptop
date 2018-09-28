@@ -1,0 +1,7 @@
+[ Bd.so ]
+# List of selected classes
+class BmnBd
+class BmnBdContFact
+class BmnBdGeo
+class BmnBdGeoPar
+class BmnBdPoint

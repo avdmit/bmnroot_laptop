@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -g -Wshadow   -shared -Wl,-soname,libSSD.so.0 -o ../lib/libSSD.so.0.0.0 CMakeFiles/SSD.dir/BmnSSD.cxx.o CMakeFiles/SSD.dir/BmnSSDPoint.cxx.o CMakeFiles/SSD.dir/G__SSDDict.cxx.o  -L/opt/fairsoft/install/lib/root  -L/opt/fairroot/install/lib -Wl,-rpath,/opt/fairsoft/install/lib/root:/opt/fairroot/install/lib: -lXMLParser -lCore -lBase 

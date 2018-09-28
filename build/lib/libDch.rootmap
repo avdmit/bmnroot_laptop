@@ -1,0 +1,18 @@
+[ Dch.so ]
+# List of selected classes
+class BmnDch
+class BmnDchContFact
+class BmnDchGeo
+class BmnDchGeoPar
+class BmnDchHitProducer
+class BmnDchHitProducerTmp
+class BmnDchHitProducer_exp
+class BmnDchPoint
+class BmnDchTrack
+class BmnDchTrackFinder
+class DchHitPlane
+class DchTrackCand
+class DchTrackManager
+class ScalarD
+class ScalarI
+class ScalarUI

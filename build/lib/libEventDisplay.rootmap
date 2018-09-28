@@ -1,0 +1,21 @@
+[ EventDisplay.so ]
+# List of selected classes
+class BmnGlobalTrackDraw
+class BmnTrackDrawH
+class BmnTrackDrawP
+class FairMCModuleDraw
+class FairXMLAttrib
+class FairXMLNode
+class MpdBoxSet
+class MpdBoxSetDraw
+class MpdBoxSetEditor
+class MpdEventManager
+class MpdEventManagerEditor
+class MpdHitDraw
+class MpdHitPointSetDraw
+class MpdMCPointDraw
+class MpdMCStack
+class MpdMCTracks
+class MpdMCTracksEditor
+class MpdPointSetDraw
+class MpdWebScreenshots

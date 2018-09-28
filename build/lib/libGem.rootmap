@@ -1,0 +1,33 @@
+{ decls }
+namespace BmnGemStripConfiguration {  }
+
+[ Gem.so ]
+# List of selected classes
+class BmnGemDigit
+class BmnGemDigitizerQAHistograms
+class BmnGemGas
+class BmnGemGeo
+class BmnGemHitProducer
+class BmnGemStripDigit
+class BmnGemStripDigitizer
+class BmnGemStripHitMaker
+class BmnGemStripLayer
+class BmnGemStripMedium
+class BmnGemStripModule
+class BmnGemStripStation
+class BmnGemStripStationSet
+class BmnGemStripStationSet_RunSpring2017
+class BmnGemStripStationSet_RunSummer2016
+class BmnGemStripStationSet_RunWinter2016
+class BmnGemStripStation_RunSpring2017
+class BmnGemStripStation_RunSummer2016
+class BmnGemStripStation_RunWinter2016
+class BmnGemTracking
+class BmnKalmanFilter
+class BmnMaterialEffects
+# List of selected namespaces
+namespace BmnGemStripMediumConfiguration
+namespace BmnGemStripConfiguration
+# List of selected enums and outer classes
+enum ElectronDriftDirectionInModule
+enum BmnGemStripConfiguration::GEM_CONFIG

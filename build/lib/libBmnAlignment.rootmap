@@ -1,0 +1,12 @@
+[ BmnAlignment.so ]
+# List of selected classes
+class BmnAlignCorrections
+class BmnDchAlignCorrections
+class BmnGemAlignCorrections
+class BmnGemResiduals
+class BmnGlobalAlignment
+class BmnMille
+class BmnMwpcAlignCorrections
+class BmnResiduals
+class BmnSiResiduals
+class BmnSiliconAlignCorrections

@@ -1,0 +1,4 @@
+[ BmnParticles.so ]
+# List of selected classes
+class BmnParticlePair
+class BmnTwoParticleDecay

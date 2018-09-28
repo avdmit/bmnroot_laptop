@@ -7,8 +7,7 @@ set(INCLUDE_DIRECTORIES
  ${CMAKE_SOURCE_DIR}/mcstack
  ${CMAKE_SOURCE_DIR}/bmndata
  ${CMAKE_SOURCE_DIR}/bmndata/math
- ${CMAKE_SOURCE_DIR}/gem
- ${CMAKE_SOURCE_DIR}/mwpc
+  ${CMAKE_SOURCE_DIR}/waveforms
 )
 
 Set(SYSTEM_INCLUDE_DIRECTORIES
@@ -28,22 +27,12 @@ link_directories(${LINK_DIRECTORIES})
 
 # List of source files
 set(SRCS
-BmnMwpcHitProducer.cxx
-BmnMwpcHitFinder.cxx
-BmnMwpcGeometry.cxx
-BmnMwpcGeometrySRC.cxx
-BmnMwpcTrack.cxx
-BmnMwpcTrackFinder.cxx
-BmnMwpc.cxx
-BmnMwpcContFact.cxx
-BmnMwpcGeo.cxx
-BmnMwpcGeoPar.cxx
-BmnMwpcPoint.cxx
+Waveform.cxx
 )
 
 Set(HEADERS)
 Set(LINKDEF LinkDef.h)
-Set(LIBRARY_NAME Mwpc)
+Set(LIBRARY_NAME Waveforms)
 Set(DEPENDENCIES Core Base BmnData)
 
 GENERATE_LIBRARY()

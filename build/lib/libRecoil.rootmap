@@ -1,0 +1,7 @@
+[ Recoil.so ]
+# List of selected classes
+class BmnRecoil
+class BmnRecoilContFact
+class BmnRecoilGeo
+class BmnRecoilGeoPar
+class BmnRecoilPoint

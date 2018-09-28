@@ -1,0 +1,16 @@
+[ Decoder.so ]
+# List of selected classes
+class BmnAdcProcessor
+class BmnCscRaw2Digit
+class BmnDchRaw2Digit
+class BmnECALRaw2Digit
+class BmnGemRaw2Digit
+class BmnLANDRaw2Digit
+class BmnMwpcRaw2Digit
+class BmnRawDataDecoder
+class BmnSiliconRaw2Digit
+class BmnTof1Raw2Digit
+class BmnTof2Raw2Digit
+class BmnTof2Raw2DigitNew
+class BmnTrigRaw2Digit
+class BmnZDCRaw2Digit

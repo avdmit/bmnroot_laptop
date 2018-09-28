@@ -43,6 +43,9 @@ void bmnloadlibs()
   gSystem->Load("libzmq");
   gSystem->Load("libBmnParticles");
   gSystem->Load("libDecoder");
+  
+  gSystem->Load("libWaveforms");
+  gSystem->Load("libNA61");
 }
 
 TString find_path_to_URQMD_files ()

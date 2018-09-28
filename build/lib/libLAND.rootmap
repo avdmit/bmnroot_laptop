@@ -1,0 +1,4 @@
+[ LAND.so ]
+# List of selected classes
+class BmnLANDHit
+class BmnLANDHitProducer

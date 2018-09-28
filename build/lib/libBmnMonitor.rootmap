@@ -1,0 +1,34 @@
+{ decls }
+namespace std {  }
+
+[ BmnMonitor.so ]
+# List of selected classes
+class BmnDataReceiver
+class BmnHist
+class BmnHistDch
+class BmnHistECAL
+class BmnHistGem
+class BmnHistLAND
+class BmnHistMwpc
+class BmnHistSilicon
+class BmnHistSrc
+class BmnHistToF
+class BmnHistToF700
+class BmnHistTrigger
+class BmnHistZDC
+class BmnMonitor
+class BmnOnlineDecoder
+class BmnRunInfo
+class PadInfo
+class vector<BmnHist*>
+class vector<BmnTrigWaveDigit*>
+class vector<TH1F*>
+class vector<TH1F>
+class vector<TSocket*>
+class vector<int*>
+class vector<vector<TH1F*> >
+class vector<vector<TH1F> >
+class vector<vector<int*> >
+class vector<vector<vector<TH1F*> > >
+class vector<vector<vector<TH1F> > >
+class vector<vector<vector<int*> > >

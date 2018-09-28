@@ -1,0 +1,11 @@
+[ Zdc.so ]
+# List of selected classes
+class BmnZdc
+class BmnZdcContFact
+class BmnZdcDigi
+class BmnZdcDigiPar
+class BmnZdcDigiProducer
+class BmnZdcDigiScheme
+class BmnZdcGeo
+class BmnZdcGeoPar
+class BmnZdcPoint

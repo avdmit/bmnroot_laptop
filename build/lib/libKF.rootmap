@@ -1,0 +1,25 @@
+[ KF.so ]
+# List of selected classes
+class CbmKF
+class CbmKFBox
+class CbmKFCone
+class CbmKFFieldMath
+class CbmKFHit
+class CbmKFMaterial
+class CbmKFMath
+class CbmKFPartEfficiencies
+class CbmKFParticle
+class CbmKFPixelMeasurement
+class CbmKFPrimaryVertexFinder
+class CbmKFStsHit
+class CbmKFTrack
+class CbmKFTrackInterface
+class CbmKFTube
+class CbmKFUMeasurement
+class CbmKFVertex
+class CbmKFVertexInterface
+class CbmKFWall
+class CbmPVFinderKF
+class CbmStsKFTrackFitter
+class KFMCParticle
+class KFParticleMatch

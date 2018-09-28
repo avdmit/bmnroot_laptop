@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++11 -g -Wshadow   -shared -Wl,-soname,libBmnSteering.so.0 -o ../lib/libBmnSteering.so.0.0.0 CMakeFiles/BmnSteering.dir/BmnSteeringGemTracking.cxx.o CMakeFiles/BmnSteering.dir/G__BmnSteeringDict.cxx.o  -L/opt/fairsoft/install/lib/root  -L/opt/fairroot/install/lib 

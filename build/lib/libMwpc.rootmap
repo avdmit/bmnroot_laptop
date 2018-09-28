@@ -1,0 +1,13 @@
+[ Mwpc.so ]
+# List of selected classes
+class BmnMwpc
+class BmnMwpcContFact
+class BmnMwpcGeo
+class BmnMwpcGeoPar
+class BmnMwpcGeometry
+class BmnMwpcGeometrySRC
+class BmnMwpcHitFinder
+class BmnMwpcHitProducer
+class BmnMwpcPoint
+class BmnMwpcTrack
+class BmnMwpcTrackFinder

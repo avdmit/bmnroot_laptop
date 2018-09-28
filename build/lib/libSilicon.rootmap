@@ -1,0 +1,20 @@
+{ decls }
+namespace BmnSiliconConfiguration {  }
+
+[ Silicon.so ]
+# List of selected classes
+class BmnSilicon
+class BmnSiliconDigit
+class BmnSiliconDigitizer
+class BmnSiliconHit
+class BmnSiliconHitMaker
+class BmnSiliconLayer
+class BmnSiliconModule
+class BmnSiliconPoint
+class BmnSiliconStation
+class BmnSiliconStationSet
+class BmnSiliconTrack
+# List of selected namespaces
+namespace BmnSiliconConfiguration
+# List of selected enums and outer classes
+enum BmnSiliconConfiguration::SILICON_CONFIG
