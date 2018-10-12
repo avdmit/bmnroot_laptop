@@ -6,6 +6,40 @@ NA61/CMakeFiles/NA61.dir/G__NA61Dict.cxx.o
  /home/alex/bmnroot_dev/bmnroot/build/NA61/G__NA61Dict.cxx
  /opt/fairsoft/install/include/root/DllImport.h
  /opt/fairsoft/install/include/root/ESTLType.h
+ /opt/fairsoft/install/include/root/Fit/BinData.h
+ /opt/fairsoft/install/include/root/Fit/DataOptions.h
+ /opt/fairsoft/install/include/root/Fit/DataRange.h
+ /opt/fairsoft/install/include/root/Fit/FitConfig.h
+ /opt/fairsoft/install/include/root/Fit/FitData.h
+ /opt/fairsoft/install/include/root/Fit/FitResult.h
+ /opt/fairsoft/install/include/root/Fit/Fitter.h
+ /opt/fairsoft/install/include/root/Fit/ParameterSettings.h
+ /opt/fairsoft/install/include/root/Fit/UnBinData.h
+ /opt/fairsoft/install/include/root/Foption.h
+ /opt/fairsoft/install/include/root/Math/Error.h
+ /opt/fairsoft/install/include/root/Math/Functor.h
+ /opt/fairsoft/install/include/root/Math/GenVector/BitReproducible.h
+ /opt/fairsoft/install/include/root/Math/GenVector/Cartesian3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/CoordinateSystemTags.h
+ /opt/fairsoft/install/include/root/Math/GenVector/Cylindrical3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/CylindricalEta3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/DisplacementVector3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/GenVectorIO.h
+ /opt/fairsoft/install/include/root/Math/GenVector/GenVector_exception.h
+ /opt/fairsoft/install/include/root/Math/GenVector/Polar3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/Polar3Dfwd.h
+ /opt/fairsoft/install/include/root/Math/GenVector/PositionVector3Dfwd.h
+ /opt/fairsoft/install/include/root/Math/GenVector/eta.h
+ /opt/fairsoft/install/include/root/Math/GenVector/etaMax.h
+ /opt/fairsoft/install/include/root/Math/IFunction.h
+ /opt/fairsoft/install/include/root/Math/IFunctionfwd.h
+ /opt/fairsoft/install/include/root/Math/IParamFunctionfwd.h
+ /opt/fairsoft/install/include/root/Math/Math.h
+ /opt/fairsoft/install/include/root/Math/MinimizerOptions.h
+ /opt/fairsoft/install/include/root/Math/Util.h
+ /opt/fairsoft/install/include/root/Math/Vector3D.h
+ /opt/fairsoft/install/include/root/Math/Vector3Dfwd.h
+ /opt/fairsoft/install/include/root/Math/WrappedFunction.h
  /opt/fairsoft/install/include/root/RConfig.h
  /opt/fairsoft/install/include/root/RConfigure.h
  /opt/fairsoft/install/include/root/RStringView.h
@@ -15,11 +49,17 @@ NA61/CMakeFiles/NA61.dir/G__NA61Dict.cxx.o
  /opt/fairsoft/install/include/root/RtypesCore.h
  /opt/fairsoft/install/include/root/RtypesImp.h
  /opt/fairsoft/install/include/root/TArray.h
+ /opt/fairsoft/install/include/root/TArrayC.h
  /opt/fairsoft/install/include/root/TArrayD.h
+ /opt/fairsoft/install/include/root/TArrayF.h
  /opt/fairsoft/install/include/root/TArrayI.h
+ /opt/fairsoft/install/include/root/TArrayS.h
+ /opt/fairsoft/install/include/root/TAtt3D.h
+ /opt/fairsoft/install/include/root/TAttAxis.h
  /opt/fairsoft/install/include/root/TAttFill.h
  /opt/fairsoft/install/include/root/TAttLine.h
  /opt/fairsoft/install/include/root/TAttMarker.h
+ /opt/fairsoft/install/include/root/TAxis.h
  /opt/fairsoft/install/include/root/TBranch.h
  /opt/fairsoft/install/include/root/TBuffer.h
  /opt/fairsoft/install/include/root/TClass.h
@@ -36,7 +76,9 @@ NA61/CMakeFiles/NA61.dir/G__NA61Dict.cxx.o
  /opt/fairsoft/install/include/root/TFileMergeInfo.h
  /opt/fairsoft/install/include/root/TFitResultPtr.h
  /opt/fairsoft/install/include/root/TGenericClassInfo.h
- /opt/fairsoft/install/include/root/TGraph.h
+ /opt/fairsoft/install/include/root/TGraph2D.h
+ /opt/fairsoft/install/include/root/TH1.h
+ /opt/fairsoft/install/include/root/TH2.h
  /opt/fairsoft/install/include/root/THashTable.h
  /opt/fairsoft/install/include/root/TInterpreter.h
  /opt/fairsoft/install/include/root/TIsAProxy.h
@@ -61,6 +103,7 @@ NA61/CMakeFiles/NA61.dir/G__NA61Dict.cxx.o
  /opt/fairsoft/install/include/root/TObjArray.h
  /opt/fairsoft/install/include/root/TObjString.h
  /opt/fairsoft/install/include/root/TObject.h
+ /opt/fairsoft/install/include/root/TPolyLine3D.h
  /opt/fairsoft/install/include/root/TROOT.h
  /opt/fairsoft/install/include/root/TSchemaHelper.h
  /opt/fairsoft/install/include/root/TSeqCollection.h
@@ -74,6 +117,7 @@ NA61/CMakeFiles/NA61.dir/G__NA61Dict.cxx.o
  /opt/fairsoft/install/include/root/TVectorFfwd.h
  /opt/fairsoft/install/include/root/TVectorT.h
  /opt/fairsoft/install/include/root/TVersionCheck.h
+ /opt/fairsoft/install/include/root/TVirtualHistPainter.h
  /opt/fairsoft/install/include/root/TVirtualIsAProxy.h
  /opt/fairsoft/install/include/root/TVirtualMutex.h
  /opt/fairsoft/install/include/root/TVirtualTreePlayer.h
@@ -86,6 +130,40 @@ NA61/CMakeFiles/NA61.dir/Occupancy.cxx.o
  /home/alex/bmnroot_dev/bmnroot/NA61/Occupancy.h
  /opt/fairsoft/install/include/root/DllImport.h
  /opt/fairsoft/install/include/root/ESTLType.h
+ /opt/fairsoft/install/include/root/Fit/BinData.h
+ /opt/fairsoft/install/include/root/Fit/DataOptions.h
+ /opt/fairsoft/install/include/root/Fit/DataRange.h
+ /opt/fairsoft/install/include/root/Fit/FitConfig.h
+ /opt/fairsoft/install/include/root/Fit/FitData.h
+ /opt/fairsoft/install/include/root/Fit/FitResult.h
+ /opt/fairsoft/install/include/root/Fit/Fitter.h
+ /opt/fairsoft/install/include/root/Fit/ParameterSettings.h
+ /opt/fairsoft/install/include/root/Fit/UnBinData.h
+ /opt/fairsoft/install/include/root/Foption.h
+ /opt/fairsoft/install/include/root/Math/Error.h
+ /opt/fairsoft/install/include/root/Math/Functor.h
+ /opt/fairsoft/install/include/root/Math/GenVector/BitReproducible.h
+ /opt/fairsoft/install/include/root/Math/GenVector/Cartesian3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/CoordinateSystemTags.h
+ /opt/fairsoft/install/include/root/Math/GenVector/Cylindrical3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/CylindricalEta3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/DisplacementVector3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/GenVectorIO.h
+ /opt/fairsoft/install/include/root/Math/GenVector/GenVector_exception.h
+ /opt/fairsoft/install/include/root/Math/GenVector/Polar3D.h
+ /opt/fairsoft/install/include/root/Math/GenVector/Polar3Dfwd.h
+ /opt/fairsoft/install/include/root/Math/GenVector/PositionVector3Dfwd.h
+ /opt/fairsoft/install/include/root/Math/GenVector/eta.h
+ /opt/fairsoft/install/include/root/Math/GenVector/etaMax.h
+ /opt/fairsoft/install/include/root/Math/IFunction.h
+ /opt/fairsoft/install/include/root/Math/IFunctionfwd.h
+ /opt/fairsoft/install/include/root/Math/IParamFunctionfwd.h
+ /opt/fairsoft/install/include/root/Math/Math.h
+ /opt/fairsoft/install/include/root/Math/MinimizerOptions.h
+ /opt/fairsoft/install/include/root/Math/Util.h
+ /opt/fairsoft/install/include/root/Math/Vector3D.h
+ /opt/fairsoft/install/include/root/Math/Vector3Dfwd.h
+ /opt/fairsoft/install/include/root/Math/WrappedFunction.h
  /opt/fairsoft/install/include/root/RConfig.h
  /opt/fairsoft/install/include/root/RConfigure.h
  /opt/fairsoft/install/include/root/RStringView.h
@@ -94,11 +172,17 @@ NA61/CMakeFiles/NA61.dir/Occupancy.cxx.o
  /opt/fairsoft/install/include/root/Rtypes.h
  /opt/fairsoft/install/include/root/RtypesCore.h
  /opt/fairsoft/install/include/root/TArray.h
+ /opt/fairsoft/install/include/root/TArrayC.h
  /opt/fairsoft/install/include/root/TArrayD.h
+ /opt/fairsoft/install/include/root/TArrayF.h
  /opt/fairsoft/install/include/root/TArrayI.h
+ /opt/fairsoft/install/include/root/TArrayS.h
+ /opt/fairsoft/install/include/root/TAtt3D.h
+ /opt/fairsoft/install/include/root/TAttAxis.h
  /opt/fairsoft/install/include/root/TAttFill.h
  /opt/fairsoft/install/include/root/TAttLine.h
  /opt/fairsoft/install/include/root/TAttMarker.h
+ /opt/fairsoft/install/include/root/TAxis.h
  /opt/fairsoft/install/include/root/TBranch.h
  /opt/fairsoft/install/include/root/TBuffer.h
  /opt/fairsoft/install/include/root/TClass.h
@@ -109,9 +193,12 @@ NA61/CMakeFiles/NA61.dir/Occupancy.cxx.o
  /opt/fairsoft/install/include/root/TError.h
  /opt/fairsoft/install/include/root/TFitResultPtr.h
  /opt/fairsoft/install/include/root/TGenericClassInfo.h
- /opt/fairsoft/install/include/root/TGraph.h
+ /opt/fairsoft/install/include/root/TGraph2D.h
+ /opt/fairsoft/install/include/root/TH1.h
+ /opt/fairsoft/install/include/root/TH2.h
  /opt/fairsoft/install/include/root/TIsAProxy.h
  /opt/fairsoft/install/include/root/TIterator.h
+ /opt/fairsoft/install/include/root/TList.h
  /opt/fairsoft/install/include/root/TMath.h
  /opt/fairsoft/install/include/root/TMathBase.h
  /opt/fairsoft/install/include/root/TMatrix.h
@@ -130,6 +217,7 @@ NA61/CMakeFiles/NA61.dir/Occupancy.cxx.o
  /opt/fairsoft/install/include/root/TObjArray.h
  /opt/fairsoft/install/include/root/TObjString.h
  /opt/fairsoft/install/include/root/TObject.h
+ /opt/fairsoft/install/include/root/TPolyLine3D.h
  /opt/fairsoft/install/include/root/TSchemaHelper.h
  /opt/fairsoft/install/include/root/TSeqCollection.h
  /opt/fairsoft/install/include/root/TStorage.h
@@ -141,6 +229,7 @@ NA61/CMakeFiles/NA61.dir/Occupancy.cxx.o
  /opt/fairsoft/install/include/root/TVectorFfwd.h
  /opt/fairsoft/install/include/root/TVectorT.h
  /opt/fairsoft/install/include/root/TVersionCheck.h
+ /opt/fairsoft/install/include/root/TVirtualHistPainter.h
  /opt/fairsoft/install/include/root/TVirtualIsAProxy.h
  /opt/fairsoft/install/include/root/TVirtualTreePlayer.h
  /opt/fairsoft/install/include/root/ThreadLocalStorage.h

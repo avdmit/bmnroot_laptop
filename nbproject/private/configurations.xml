@@ -1,0 +1,2152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="alignment">
+        <in>AlignLinkDef.h</in>
+        <in>BmnAlignCorrections.cxx</in>
+        <in>BmnAlignCorrections.h</in>
+        <in>BmnDchAlignCorrections.cxx</in>
+        <in>BmnDchAlignCorrections.h</in>
+        <in>BmnGemAlignCorrections.cxx</in>
+        <in>BmnGemAlignCorrections.h</in>
+        <in>BmnGemAlignmentCorrections.cxx</in>
+        <in>BmnGemAlignmentCorrections.h</in>
+        <in>BmnGemResiduals.cxx</in>
+        <in>BmnGemResiduals.h</in>
+        <in>BmnGlobalAlignment.cxx</in>
+        <in>BmnGlobalAlignment.h</in>
+        <in>BmnMille.cxx</in>
+        <in>BmnMille.h</in>
+        <in>BmnMwpcAlignCorrections.cxx</in>
+        <in>BmnMwpcAlignCorrections.h</in>
+        <in>BmnResiduals.cxx</in>
+        <in>BmnResiduals.h</in>
+        <in>BmnSiResiduals.cxx</in>
+        <in>BmnSiResiduals.h</in>
+        <in>BmnSiliconAlignCorrections.cxx</in>
+        <in>BmnSiliconAlignCorrections.h</in>
+      </df>
+      <df name="bd">
+        <in>BmnBd.cxx</in>
+        <in>BmnBd.h</in>
+        <in>BmnBdContFact.cxx</in>
+        <in>BmnBdContFact.h</in>
+        <in>BmnBdGeo.cxx</in>
+        <in>BmnBdGeo.h</in>
+        <in>BmnBdGeoPar.cxx</in>
+        <in>BmnBdGeoPar.h</in>
+        <in>BmnBdLinkDef.h</in>
+        <in>BmnBdPoint.cxx</in>
+        <in>BmnBdPoint.h</in>
+      </df>
+      <df name="bmndata">
+        <df name="cbm">
+          <in>CbmFindPrimaryVertex.cxx</in>
+          <in>CbmFindPrimaryVertex.h</in>
+          <in>CbmPrimaryVertexFinder.cxx</in>
+          <in>CbmPrimaryVertexFinder.h</in>
+          <in>CbmStsTrackFinder.cxx</in>
+          <in>CbmStsTrackFinder.h</in>
+          <in>CbmStsTrackFitter.cxx</in>
+          <in>CbmStsTrackFitter.h</in>
+          <in>CbmTofMerger.cxx</in>
+          <in>CbmTofMerger.h</in>
+          <in>CbmTrackMerger.cxx</in>
+          <in>CbmTrackMerger.h</in>
+          <in>CbmVertex.cxx</in>
+          <in>CbmVertex.h</in>
+        </df>
+        <df name="math">
+          <in>BmnMath.cxx</in>
+          <in>BmnMath.h</in>
+          <in>BmnMatrixMath.cxx</in>
+          <in>BmnMatrixMath.h</in>
+          <in>FitWLSQ.cxx</in>
+          <in>FitWLSQ.h</in>
+        </df>
+        <in>BmnADCDigit.cxx</in>
+        <in>BmnADCDigit.h</in>
+        <in>BmnADCSRCDigit.cxx</in>
+        <in>BmnADCSRCDigit.h</in>
+        <in>BmnCounterTask.cxx</in>
+        <in>BmnCounterTask.h</in>
+        <in>BmnCscDigit.cxx</in>
+        <in>BmnCscDigit.h</in>
+        <in>BmnDataLinkDef.h</in>
+        <in>BmnDchDigit.cxx</in>
+        <in>BmnDchDigit.h</in>
+        <in>BmnDchHit.cxx</in>
+        <in>BmnDchHit.h</in>
+        <in>BmnDchHitOriginal.cxx</in>
+        <in>BmnDchHitOriginal.h</in>
+        <in>BmnECALDigit.cxx</in>
+        <in>BmnECALDigit.h</in>
+        <in>BmnEcalDigit.cxx</in>
+        <in>BmnEcalDigit.h</in>
+        <in>BmnEnums.h</in>
+        <in>BmnEventHeader.cxx</in>
+        <in>BmnEventHeader.h</in>
+        <in>BmnEventQuality.cxx</in>
+        <in>BmnEventQuality.h</in>
+        <in>BmnFileSource.cxx</in>
+        <in>BmnFileSource.h</in>
+        <in>BmnFitNode.h</in>
+        <in>BmnGemStripHit.cxx</in>
+        <in>BmnGemStripHit.h</in>
+        <in>BmnGemTrack.cxx</in>
+        <in>BmnGemTrack.h</in>
+        <in>BmnGeoNavigator.cxx</in>
+        <in>BmnGeoNavigator.h</in>
+        <in>BmnGlobalTrack.cxx</in>
+        <in>BmnGlobalTrack.h</in>
+        <in>BmnHRBDigit.cxx</in>
+        <in>BmnHRBDigit.h</in>
+        <in>BmnHit.cxx</in>
+        <in>BmnHit.h</in>
+        <in>BmnIdentifiableTrack.cxx</in>
+        <in>BmnIdentifiableTrack.h</in>
+        <in>BmnLANDDigit.cxx</in>
+        <in>BmnLANDDigit.h</in>
+        <in>BmnLink.cxx</in>
+        <in>BmnLink.h</in>
+        <in>BmnMSCDigit.cxx</in>
+        <in>BmnMSCDigit.h</in>
+        <in>BmnMatch.cxx</in>
+        <in>BmnMatch.h</in>
+        <in>BmnMwpcDigit.cxx</in>
+        <in>BmnMwpcDigit.h</in>
+        <in>BmnMwpcHit.cxx</in>
+        <in>BmnMwpcHit.h</in>
+        <in>BmnRunHeader.cxx</in>
+        <in>BmnRunHeader.h</in>
+        <in>BmnStripData.h</in>
+        <in>BmnSyncDigit.cxx</in>
+        <in>BmnSyncDigit.h</in>
+        <in>BmnTDCDigit.cxx</in>
+        <in>BmnTDCDigit.h</in>
+        <in>BmnTQDCADCDigit.cxx</in>
+        <in>BmnTQDCADCDigit.h</in>
+        <in>BmnTTBDigit.cxx</in>
+        <in>BmnTTBDigit.h</in>
+        <in>BmnTacquilaDigit.cxx</in>
+        <in>BmnTacquilaDigit.h</in>
+        <in>BmnTof1Digit.cxx</in>
+        <in>BmnTof1Digit.h</in>
+        <in>BmnTof2Digit.cxx</in>
+        <in>BmnTof2Digit.h</in>
+        <in>BmnTofHit.cxx</in>
+        <in>BmnTofHit.h</in>
+        <in>BmnTrack.cxx</in>
+        <in>BmnTrack.h</in>
+        <in>BmnTrackMatch.cxx</in>
+        <in>BmnTrackMatch.h</in>
+        <in>BmnTrigDigit.cxx</in>
+        <in>BmnTrigDigit.h</in>
+        <in>BmnTrigInfo.cxx</in>
+        <in>BmnTrigInfo.h</in>
+        <in>BmnTrigWaveDigit.cxx</in>
+        <in>BmnTrigWaveDigit.h</in>
+        <in>BmnZDCDigit.cxx</in>
+        <in>BmnZDCDigit.h</in>
+        <in>CbmBaseHit.cxx</in>
+        <in>CbmBaseHit.h</in>
+        <in>CbmDaqBuffer.cxx</in>
+        <in>CbmDaqBuffer.h</in>
+        <in>CbmDetectorList.cxx</in>
+        <in>CbmDetectorList.h</in>
+        <in>CbmDigi.cxx</in>
+        <in>CbmDigi.h</in>
+        <in>CbmEcalPoint.cxx</in>
+        <in>CbmEcalPoint.h</in>
+        <in>CbmGeoSttPar.cxx</in>
+        <in>CbmGeoSttPar.h</in>
+        <in>CbmGlobalTrack.cxx</in>
+        <in>CbmGlobalTrack.h</in>
+        <in>CbmHit.cxx</in>
+        <in>CbmHit.h</in>
+        <in>CbmMCBuffer.cxx</in>
+        <in>CbmMCBuffer.h</in>
+        <in>CbmMCPointBuffer.h</in>
+        <in>CbmMCTrack.cxx</in>
+        <in>CbmMCTrack.h</in>
+        <in>CbmMvdDetectorId.cxx</in>
+        <in>CbmMvdDetectorId.h</in>
+        <in>CbmMvdGeoPar.cxx</in>
+        <in>CbmMvdGeoPar.h</in>
+        <in>CbmMvdHit.cxx</in>
+        <in>CbmMvdHit.h</in>
+        <in>CbmMvdHitMatch.cxx</in>
+        <in>CbmMvdHitMatch.h</in>
+        <in>CbmMvdPoint.cxx</in>
+        <in>CbmMvdPoint.h</in>
+        <in>CbmPixelHit.cxx</in>
+        <in>CbmPixelHit.h</in>
+        <in>CbmPsdDigi.cxx</in>
+        <in>CbmPsdDigi.h</in>
+        <in>CbmPsdEventData.cxx</in>
+        <in>CbmPsdEventData.h</in>
+        <in>CbmPsdHit.cxx</in>
+        <in>CbmPsdHit.h</in>
+        <in>CbmPsdPoint.cxx</in>
+        <in>CbmPsdPoint.h</in>
+        <in>CbmStack.cxx</in>
+        <in>CbmStack.h</in>
+        <in>CbmStripHit.cxx</in>
+        <in>CbmStripHit.h</in>
+        <in>CbmStsCluster.cxx</in>
+        <in>CbmStsCluster.h</in>
+        <in>CbmStsDetectorId.cxx</in>
+        <in>CbmStsDetectorId.h</in>
+        <in>CbmStsDigi.cxx</in>
+        <in>CbmStsDigi.h</in>
+        <in>CbmStsDigiLight.cxx</in>
+        <in>CbmStsDigiLight.h</in>
+        <in>CbmStsDigiMatch.cxx</in>
+        <in>CbmStsDigiMatch.h</in>
+        <in>CbmStsHit.cxx</in>
+        <in>CbmStsHit.h</in>
+        <in>CbmStsPoint.cxx</in>
+        <in>CbmStsPoint.h</in>
+        <in>CbmStsTrack.cxx</in>
+        <in>CbmStsTrack.h</in>
+        <in>CbmTofHit.cxx</in>
+        <in>CbmTofHit.h</in>
+        <in>CbmTofPoint.cxx</in>
+        <in>CbmTofPoint.h</in>
+        <in>CbmTofTrack.cxx</in>
+        <in>CbmTofTrack.h</in>
+        <in>CbmTrackMatch.cxx</in>
+        <in>CbmTrackMatch.h</in>
+        <in>DigiArrays.h</in>
+      </df>
+      <df name="bmnfield">
+        <in>BmnFieldConst.cxx</in>
+        <in>BmnFieldConst.h</in>
+        <in>BmnFieldContFact.cxx</in>
+        <in>BmnFieldContFact.h</in>
+        <in>BmnFieldCreator.cxx</in>
+        <in>BmnFieldCreator.h</in>
+        <in>BmnFieldMap.cxx</in>
+        <in>BmnFieldMap.h</in>
+        <in>BmnFieldMapCreator.cxx</in>
+        <in>BmnFieldMapCreator.h</in>
+        <in>BmnFieldMapData.cxx</in>
+        <in>BmnFieldMapData.h</in>
+        <in>BmnFieldMapSym3.cxx</in>
+        <in>BmnFieldMapSym3.h</in>
+        <in>BmnFieldPar.cxx</in>
+        <in>BmnFieldPar.h</in>
+        <in>BmnNewFieldMap.cxx</in>
+        <in>BmnNewFieldMap.h</in>
+        <in>BmnSP41FieldMapCreator.cxx</in>
+        <in>BmnSP41FieldMapCreator.h</in>
+        <in>FieldLinkDef.h</in>
+      </df>
+      <df name="build">
+        <df name="alignment">
+          <df name="CMakeFiles">
+            <df name="BmnAlignment.dir">
+            </df>
+          </df>
+          <in>G__BmnAlignmentDict.cxx</in>
+        </df>
+        <df name="bd">
+          <df name="CMakeFiles">
+            <df name="Bd.dir">
+            </df>
+          </df>
+          <in>G__BdDict.cxx</in>
+        </df>
+        <df name="bin">
+          <in>merge_result.C</in>
+        </df>
+        <df name="bmndata">
+          <df name="CMakeFiles">
+            <df name="BmnData.dir">
+              <df name="cbm">
+              </df>
+              <df name="math">
+              </df>
+            </df>
+          </df>
+          <in>G__BmnDataDict.cxx</in>
+        </df>
+        <df name="bmnfield">
+          <df name="CMakeFiles">
+            <df name="BmnField.dir">
+            </df>
+          </df>
+          <in>G__BmnFieldDict.cxx</in>
+        </df>
+        <df name="cat">
+          <df name="CMakeFiles">
+            <df name="Cat.dir">
+              <df name="L1Algo">
+              </df>
+              <df name="OffLineInterface">
+              </df>
+              <df name="ParticleFinder">
+              </df>
+            </df>
+          </df>
+          <in>G__CatDict.cxx</in>
+        </df>
+        <df name="CMakeFiles">
+          <df name="3.10.2">
+            <df name="CompilerIdC">
+              <df name="tmp">
+              </df>
+              <in>CMakeCCompilerId.c</in>
+            </df>
+            <df name="CompilerIdCXX">
+              <df name="tmp">
+              </df>
+              <in>CMakeCXXCompilerId.cpp</in>
+            </df>
+          </df>
+          <df name="CMakeTmp">
+          </df>
+          <df name="Continuous.dir">
+          </df>
+          <df name="ContinuousBuild.dir">
+          </df>
+          <df name="ContinuousConfigure.dir">
+          </df>
+          <df name="ContinuousCoverage.dir">
+          </df>
+          <df name="ContinuousMemCheck.dir">
+          </df>
+          <df name="ContinuousStart.dir">
+          </df>
+          <df name="ContinuousSubmit.dir">
+          </df>
+          <df name="ContinuousTest.dir">
+          </df>
+          <df name="ContinuousUpdate.dir">
+          </df>
+          <df name="Experimental.dir">
+          </df>
+          <df name="ExperimentalBuild.dir">
+          </df>
+          <df name="ExperimentalConfigure.dir">
+          </df>
+          <df name="ExperimentalCoverage.dir">
+          </df>
+          <df name="ExperimentalMemCheck.dir">
+          </df>
+          <df name="ExperimentalStart.dir">
+          </df>
+          <df name="ExperimentalSubmit.dir">
+          </df>
+          <df name="ExperimentalTest.dir">
+          </df>
+          <df name="ExperimentalUpdate.dir">
+          </df>
+          <df name="Nightly.dir">
+          </df>
+          <df name="NightlyBuild.dir">
+          </df>
+          <df name="NightlyConfigure.dir">
+          </df>
+          <df name="NightlyCoverage.dir">
+          </df>
+          <df name="NightlyMemCheck.dir">
+          </df>
+          <df name="NightlyMemoryCheck.dir">
+          </df>
+          <df name="NightlyStart.dir">
+          </df>
+          <df name="NightlySubmit.dir">
+          </df>
+          <df name="NightlyTest.dir">
+          </df>
+          <df name="NightlyUpdate.dir">
+          </df>
+          <df name="svnheader.dir">
+          </df>
+          <in>feature_tests.c</in>
+          <in>feature_tests.cxx</in>
+        </df>
+        <df name="cxx11">
+          <df name="cxx11___func__">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_auto">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_auto_fail_compile">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_auto_ret_type">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_class_override_final">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_class_override_final_fail_compile">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_constexpr">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_constructor-delegation">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_cstdint">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_decltype">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_funcptr-to-lambda-conversion">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_initializer_list">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_lambda">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_long_long">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_nullptr">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_nullptr_fail_compile">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_regex">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_rvalue-references">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_sharedpointer">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_sizeof_member">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_sizeof_member_fail">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_static_assert">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_static_assert_fail_compile">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+          <df name="cxx11_variadic_templates">
+            <df name="CMakeFiles">
+              <df name="CMakeTmp">
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="dch">
+          <df name="CMakeFiles">
+            <df name="Dch.dir">
+            </df>
+          </df>
+          <in>G__DchDict.cxx</in>
+        </df>
+        <df name="decoder">
+          <df name="CMakeFiles">
+            <df name="Decoder.dir">
+            </df>
+          </df>
+          <in>G__DecoderDict.cxx</in>
+        </df>
+        <df name="ecal">
+          <df name="CMakeFiles">
+            <df name="Ecal.dir">
+            </df>
+          </df>
+          <in>G__EcalDict.cxx</in>
+        </df>
+        <df name="eventdisplay">
+          <df name="CMakeFiles">
+            <df name="EventDisplay.dir">
+              <df name="bmn">
+              </df>
+            </df>
+          </df>
+          <in>G__EventDisplayDict.cxx</in>
+        </df>
+        <df name="gem">
+          <df name="CMakeFiles">
+            <df name="Gem.dir">
+            </df>
+          </df>
+          <in>G__GemDict.cxx</in>
+        </df>
+        <df name="generators">
+          <df name="CMakeFiles">
+            <df name="MpdGen.dir">
+            </df>
+          </df>
+          <in>G__MpdGenDict.cxx</in>
+        </df>
+        <df name="globaltracking">
+          <df name="CMakeFiles">
+            <df name="GlobalTracking.dir">
+            </df>
+          </df>
+          <in>G__GlobalTrackingDict.cxx</in>
+        </df>
+        <df name="identification">
+          <df name="CMakeFiles">
+            <df name="BmnIdentification.dir">
+            </df>
+          </df>
+          <in>G__BmnIdentificationDict.cxx</in>
+        </df>
+        <df name="KF">
+          <df name="CMakeFiles">
+            <df name="KF.dir">
+              <df name="Interface">
+              </df>
+              <df name="KFParticlesFinder">
+              </df>
+              <df name="KFQA">
+              </df>
+            </df>
+          </df>
+          <in>G__KFDict.cxx</in>
+        </df>
+        <df name="land">
+          <df name="CMakeFiles">
+            <df name="LAND.dir">
+            </df>
+          </df>
+          <in>G__LANDDict.cxx</in>
+        </df>
+        <df name="lib">
+        </df>
+        <df name="macro">
+          <df name="CMakeFiles">
+          </df>
+          <df name="mpd_scheduler">
+            <df name="CMakeFiles">
+              <df name="copy-merge-result.dir">
+              </df>
+              <df name="copy-union-job.dir">
+              </df>
+              <df name="mpd-scheduler.dir">
+                <df name="src">
+                </df>
+              </df>
+            </df>
+          </df>
+          <df name="run">
+            <df name="CMakeFiles">
+            </df>
+          </df>
+          <df name="srcAnalysis">
+            <df name="CMakeFiles">
+            </df>
+            <df name="tracking">
+              <df name="CMakeFiles">
+                <df name="track_arms.dir">
+                </df>
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="monitor">
+          <df name="CMakeFiles">
+            <df name="BmnMonitor.dir">
+            </df>
+          </df>
+          <in>G__BmnMonitorDict.cxx</in>
+        </df>
+        <df name="mwpc">
+          <df name="CMakeFiles">
+            <df name="Mwpc.dir">
+            </df>
+          </df>
+          <in>G__MwpcDict.cxx</in>
+        </df>
+        <df name="NA61">
+          <df name="CMakeFiles">
+            <df name="NA61.dir">
+            </df>
+          </df>
+          <in>G__NA61Dict.cxx</in>
+        </df>
+        <df name="passive">
+          <df name="CMakeFiles">
+            <df name="Passive.dir">
+            </df>
+          </df>
+          <in>G__PassiveDict.cxx</in>
+        </df>
+        <df name="physics">
+          <df name="particles">
+            <df name="CMakeFiles">
+              <df name="BmnParticles.dir">
+              </df>
+            </df>
+            <in>G__BmnParticlesDict.cxx</in>
+          </df>
+        </df>
+        <df name="psd">
+          <df name="CMakeFiles">
+            <df name="Psd.dir">
+            </df>
+          </df>
+          <in>G__PsdDict.cxx</in>
+        </df>
+        <df name="QA">
+          <df name="CMakeFiles">
+            <df name="BmnQa.dir">
+              <df name="report">
+              </df>
+            </df>
+          </df>
+          <in>G__BmnQaDict.cxx</in>
+        </df>
+        <df name="recoil">
+          <df name="CMakeFiles">
+            <df name="Recoil.dir">
+            </df>
+          </df>
+          <in>G__RecoilDict.cxx</in>
+        </df>
+        <df name="silicon">
+          <df name="CMakeFiles">
+            <df name="Silicon.dir">
+            </df>
+          </df>
+          <in>G__SiliconDict.cxx</in>
+        </df>
+        <df name="ssd">
+          <df name="CMakeFiles">
+            <df name="SSD.dir">
+            </df>
+          </df>
+          <in>G__SSDDict.cxx</in>
+        </df>
+        <df name="steering">
+          <df name="CMakeFiles">
+            <df name="BmnSteering.dir">
+            </df>
+          </df>
+          <in>G__BmnSteeringDict.cxx</in>
+        </df>
+        <df name="sts">
+          <df name="CMakeFiles">
+            <df name="Sts.dir">
+            </df>
+          </df>
+          <in>G__StsDict.cxx</in>
+        </df>
+        <df name="Testing">
+          <df name="Temporary">
+          </df>
+        </df>
+        <df name="tof">
+          <df name="CMakeFiles">
+            <df name="TOF.dir">
+            </df>
+          </df>
+          <in>G__TOFDict.cxx</in>
+        </df>
+        <df name="tof1">
+          <df name="CMakeFiles">
+            <df name="TOF1.dir">
+            </df>
+          </df>
+          <in>G__TOF1Dict.cxx</in>
+        </df>
+        <df name="uni_db">
+          <df name="CMakeFiles">
+            <df name="show_experiment_files.dir">
+            </df>
+            <df name="show_simulation_files.dir">
+            </df>
+            <df name="UniDb.dir">
+              <df name="db_classes">
+              </df>
+              <df name="elog_classes">
+              </df>
+            </df>
+          </df>
+          <in>G__UniDbDict.cxx</in>
+        </df>
+        <df name="waveforms">
+          <df name="CMakeFiles">
+            <df name="Waveforms.dir">
+            </df>
+          </df>
+          <in>G__WaveformsDict.cxx</in>
+        </df>
+        <df name="zdc">
+          <df name="CMakeFiles">
+            <df name="Zdc.dir">
+            </df>
+          </df>
+          <in>G__ZdcDict.cxx</in>
+        </df>
+        <in>FairVersion.h</in>
+      </df>
+      <df name="cat">
+        <df name="L1Algo">
+          <df name="utils">
+            <in>L1AlgoDraw.h</in>
+            <in>L1AlgoEfficiencyPerformance.h</in>
+            <in>L1AlgoPulls.h</in>
+            <in>L1CADebug.h</in>
+          </df>
+          <in>L1AddMaterial.h</in>
+          <in>L1Algo.cxx</in>
+          <in>L1Algo.h</in>
+          <in>L1AlgoTBB.h</in>
+          <in>L1Branch.h</in>
+          <in>L1CAMergeClones.cxx</in>
+          <in>L1CATrackFinder.cxx</in>
+          <in>L1Extrapolation.h</in>
+          <in>L1Field.h</in>
+          <in>L1Filtration.h</in>
+          <in>L1Grid.h</in>
+          <in>L1HitArea.h</in>
+          <in>L1HitPoint.h</in>
+          <in>L1HitsSortHelper.cxx</in>
+          <in>L1HitsSortHelper.h</in>
+          <in>L1MaterialInfo.h</in>
+          <in>L1Portion.h</in>
+          <in>L1Station.h</in>
+          <in>L1Strip.h</in>
+          <in>L1StsHit.h</in>
+          <in>L1Timer.h</in>
+          <in>L1Track.h</in>
+          <in>L1TrackExtender.cxx</in>
+          <in>L1TrackFitter.cxx</in>
+          <in>L1TrackPar.h</in>
+          <in>L1Triplet.h</in>
+          <in>L1UMeasurementInfo.h</in>
+          <in>L1XYMeasurementInfo.h</in>
+        </df>
+        <df name="OffLineInterface">
+          <in>CbmL1StsTrackFinder.cxx</in>
+          <in>CbmL1StsTrackFinder.h</in>
+          <in>CbmL1SttHit.cxx</in>
+          <in>CbmL1SttHit.h</in>
+          <in>CbmL1SttTrack.cxx</in>
+          <in>CbmL1SttTrack.h</in>
+          <in>CbmL1SttTrackFinder.cxx</in>
+          <in>CbmL1SttTrackFinder.h</in>
+        </df>
+        <df name="ParticleFinder">
+          <in>CbmL1PFFitter.cxx</in>
+          <in>CbmL1PFFitter.h</in>
+          <in>CbmL1PFMCParticle.cxx</in>
+          <in>CbmL1PFMCParticle.h</in>
+        </df>
+        <df name="utils">
+          <in>Draw_FieldApprox.C</in>
+          <in>Draw_L1_histo.C</in>
+        </df>
+        <df name="vectors">
+          <in>P4_F32vec4.h</in>
+          <in>P4_F64vec2.h</in>
+          <in>PSEUDO_F32vec1.h</in>
+          <in>PSEUDO_F32vec4.h</in>
+          <in>PSEUDO_F64vec1.h</in>
+          <in>std_alloc.h</in>
+          <in>vec_arithmetic.h</in>
+        </df>
+        <in>CatLinkDef.h</in>
+        <in>CbmL1.cxx</in>
+        <in>CbmL1.h</in>
+        <in>CbmL1Constants.h</in>
+        <in>CbmL1Counters.h</in>
+        <in>CbmL1Def.h</in>
+        <in>CbmL1MCPoint.h</in>
+        <in>CbmL1MCTrack.cxx</in>
+        <in>CbmL1MCTrack.h</in>
+        <in>CbmL1PartEfficiencies.h</in>
+        <in>CbmL1ParticlesFinder.cxx</in>
+        <in>CbmL1ParticlesFinder.h</in>
+        <in>CbmL1Performance.cxx</in>
+        <in>CbmL1ReadEvent.cxx</in>
+        <in>CbmL1StsHit.h</in>
+        <in>CbmL1Track.h</in>
+        <in>CbmL1TrackFitter.cxx</in>
+        <in>CbmL1TrackPar.h</in>
+        <in>CbmL1Vtx.h</in>
+      </df>
+      <df name="cmake">
+        <df name="modules">
+        </df>
+      </df>
+      <df name="CMakeFiles">
+        <df name="3.10.2">
+          <df name="CompilerIdC">
+            <df name="tmp">
+            </df>
+            <in>CMakeCCompilerId.c</in>
+          </df>
+          <df name="CompilerIdCXX">
+            <df name="tmp">
+            </df>
+            <in>CMakeCXXCompilerId.cpp</in>
+          </df>
+        </df>
+        <df name="CMakeTmp">
+        </df>
+        <in>feature_tests.c</in>
+        <in>feature_tests.cxx</in>
+      </df>
+      <df name="config">
+        <in>constants.h</in>
+      </df>
+      <df name="dch">
+        <in>BmnDch.cxx</in>
+        <in>BmnDch.h</in>
+        <in>BmnDchContFact.cxx</in>
+        <in>BmnDchContFact.h</in>
+        <in>BmnDchGeo.cxx</in>
+        <in>BmnDchGeo.h</in>
+        <in>BmnDchGeoPar.cxx</in>
+        <in>BmnDchGeoPar.h</in>
+        <in>BmnDchHitProducer.cxx</in>
+        <in>BmnDchHitProducer.h</in>
+        <in>BmnDchHitProducerTmp.cxx</in>
+        <in>BmnDchHitProducerTmp.h</in>
+        <in>BmnDchHitProducer_exp.cxx</in>
+        <in>BmnDchHitProducer_exp.h</in>
+        <in>BmnDchPoint.cxx</in>
+        <in>BmnDchPoint.h</in>
+        <in>BmnDchTrack.cxx</in>
+        <in>BmnDchTrack.h</in>
+        <in>BmnDchTrackFinder.cxx</in>
+        <in>BmnDchTrackFinder.h</in>
+        <in>DCHgeometryconstants_bmn.h</in>
+        <in>DchHitPlane.cxx</in>
+        <in>DchHitPlane.h</in>
+        <in>DchTrackCand.cxx</in>
+        <in>DchTrackCand.h</in>
+        <in>DchTrackManager.cxx</in>
+        <in>DchTrackManager.h</in>
+        <in>DchTrackManagerSim.cxx</in>
+        <in>DchTrackManagerSim.h</in>
+        <in>LinkDef.h</in>
+        <in>ScalarD.cxx</in>
+        <in>ScalarD.h</in>
+        <in>ScalarI.cxx</in>
+        <in>ScalarI.h</in>
+        <in>ScalarUI.cxx</in>
+        <in>ScalarUI.h</in>
+      </df>
+      <df name="decoder">
+        <in>BmnAdcProcessor.cxx</in>
+        <in>BmnAdcProcessor.h</in>
+        <in>BmnCscRaw2Digit.cxx</in>
+        <in>BmnCscRaw2Digit.h</in>
+        <in>BmnDchRaw2Digit.cxx</in>
+        <in>BmnDchRaw2Digit.h</in>
+        <in>BmnECALRaw2Digit.cxx</in>
+        <in>BmnECALRaw2Digit.h</in>
+        <in>BmnGemRaw2Digit.cxx</in>
+        <in>BmnGemRaw2Digit.h</in>
+        <in>BmnLANDRaw2Digit.cxx</in>
+        <in>BmnLANDRaw2Digit.h</in>
+        <in>BmnMwpcRaw2Digit.cxx</in>
+        <in>BmnMwpcRaw2Digit.h</in>
+        <in>BmnRawDataDecoder.cxx</in>
+        <in>BmnRawDataDecoder.h</in>
+        <in>BmnSiliconRaw2Digit.cxx</in>
+        <in>BmnSiliconRaw2Digit.h</in>
+        <in>BmnTof1Raw2Digit.cxx</in>
+        <in>BmnTof1Raw2Digit.h</in>
+        <in>BmnTof2Raw2Digit.cxx</in>
+        <in>BmnTof2Raw2Digit.h</in>
+        <in>BmnTof2Raw2DigitNew.cxx</in>
+        <in>BmnTof2Raw2DigitNew.h</in>
+        <in>BmnTrigRaw2Digit.cxx</in>
+        <in>BmnTrigRaw2Digit.h</in>
+        <in>BmnZDCRaw2Digit.cxx</in>
+        <in>BmnZDCRaw2Digit.h</in>
+        <in>DecoderLinkDef.h</in>
+      </df>
+      <df name="ecal">
+        <in>BmnEcal.cxx</in>
+        <in>BmnEcal.h</in>
+        <in>BmnEcalContFact.cxx</in>
+        <in>BmnEcalContFact.h</in>
+        <in>BmnEcalGeo.cxx</in>
+        <in>BmnEcalGeo.h</in>
+        <in>BmnEcalGeoPar.cxx</in>
+        <in>BmnEcalGeoPar.h</in>
+        <in>BmnEcalLinkDef.h</in>
+        <in>BmnEcalPoint.cxx</in>
+        <in>BmnEcalPoint.h</in>
+      </df>
+      <df name="eventdisplay">
+        <df name="bmn">
+          <in>BmnGlobalTrackDraw.cxx</in>
+          <in>BmnGlobalTrackDraw.h</in>
+          <in>BmnTrackDrawH.cxx</in>
+          <in>BmnTrackDrawH.h</in>
+          <in>BmnTrackDrawP.cxx</in>
+          <in>BmnTrackDrawP.h</in>
+          <in>EventBDLinkDef.h</in>
+          <in>EventBLinkDef.h</in>
+          <in>FairMCModuleDraw.cxx</in>
+          <in>FairMCModuleDraw.h</in>
+        </df>
+        <df name="mpd">
+          <in>EventMDLinkDef.h</in>
+          <in>EventMLinkDef.h</in>
+          <in>MpdEmcTowerDraw.cxx</in>
+          <in>MpdEmcTowerDraw.h</in>
+          <in>MpdGlobalTrackDraw.cxx</in>
+          <in>MpdGlobalTrackDraw.h</in>
+          <in>MpdZdcTowerDraw.cxx</in>
+          <in>MpdZdcTowerDraw.h</in>
+        </df>
+        <df name="tdaq">
+          <in>BmnEventMonitor.cxx</in>
+          <in>BmnEventMonitor.h</in>
+          <in>BmnEventPull.cxx</in>
+          <in>BmnEventPull.h</in>
+          <in>BmnTdaqSource.cxx</in>
+          <in>BmnTdaqSource.h</in>
+          <in>EventDLinkDef.h</in>
+          <in>readRootFile.C</in>
+        </df>
+        <in>EventDisplayLinkDef.h</in>
+        <in>FairXMLNode.cxx</in>
+        <in>FairXMLNode.h</in>
+        <in>MpdBoxSet.cxx</in>
+        <in>MpdBoxSet.h</in>
+        <in>MpdBoxSetDraw.cxx</in>
+        <in>MpdBoxSetDraw.h</in>
+        <in>MpdBoxSetEditor.cxx</in>
+        <in>MpdBoxSetEditor.h</in>
+        <in>MpdEventManager.cxx</in>
+        <in>MpdEventManager.h</in>
+        <in>MpdEventManagerEditor.cxx</in>
+        <in>MpdEventManagerEditor.h</in>
+        <in>MpdHitDraw.cxx</in>
+        <in>MpdHitDraw.h</in>
+        <in>MpdHitPointSetDraw.cxx</in>
+        <in>MpdHitPointSetDraw.h</in>
+        <in>MpdMCPointDraw.cxx</in>
+        <in>MpdMCPointDraw.h</in>
+        <in>MpdMCStack.cxx</in>
+        <in>MpdMCStack.h</in>
+        <in>MpdMCTracks.cxx</in>
+        <in>MpdMCTracks.h</in>
+        <in>MpdMCTracksEditor.cxx</in>
+        <in>MpdMCTracksEditor.h</in>
+        <in>MpdPointSetDraw.cxx</in>
+        <in>MpdPointSetDraw.h</in>
+        <in>MpdWebScreenshots.cxx</in>
+        <in>MpdWebScreenshots.h</in>
+      </df>
+      <df name="gconfig">
+        <in>DecayConfig.C</in>
+        <in>Geane.C</in>
+        <in>SetCuts.C</in>
+        <in>UserDecay.C</in>
+        <in>basiclibs.C</in>
+        <in>flConfig.C</in>
+        <in>fllibs.C</in>
+        <in>g3Config.C</in>
+        <in>g3Config_new.C</in>
+        <in>g3libs.C</in>
+        <in>g4Config.C</in>
+        <in>g4libs.C</in>
+        <in>rootlogon.C</in>
+      </df>
+      <df name="gem">
+        <df name="XMLConfigs">
+        </df>
+        <in>BmnGemDigit.cxx</in>
+        <in>BmnGemDigit.h</in>
+        <in>BmnGemDigitizerQAHistograms.cxx</in>
+        <in>BmnGemDigitizerQAHistograms.h</in>
+        <in>BmnGemGas.cxx</in>
+        <in>BmnGemGas.h</in>
+        <in>BmnGemGeo.cxx</in>
+        <in>BmnGemGeo.h</in>
+        <in>BmnGemHitProducer.cxx</in>
+        <in>BmnGemHitProducer.h</in>
+        <in>BmnGemStripConfiguration.h</in>
+        <in>BmnGemStripDigit.cxx</in>
+        <in>BmnGemStripDigit.h</in>
+        <in>BmnGemStripDigitizer.cxx</in>
+        <in>BmnGemStripDigitizer.h</in>
+        <in>BmnGemStripHitMaker.cxx</in>
+        <in>BmnGemStripHitMaker.h</in>
+        <in>BmnGemStripLayer.cxx</in>
+        <in>BmnGemStripLayer.h</in>
+        <in>BmnGemStripMedium.cxx</in>
+        <in>BmnGemStripMedium.h</in>
+        <in>BmnGemStripMediumConfiguration.h</in>
+        <in>BmnGemStripModule.cxx</in>
+        <in>BmnGemStripModule.h</in>
+        <in>BmnGemStripStation.cxx</in>
+        <in>BmnGemStripStation.h</in>
+        <in>BmnGemStripStationSet.cxx</in>
+        <in>BmnGemStripStationSet.h</in>
+        <in>BmnGemStripStationSet_RunSpring2017.cxx</in>
+        <in>BmnGemStripStationSet_RunSpring2017.h</in>
+        <in>BmnGemStripStationSet_RunSummer2016.cxx</in>
+        <in>BmnGemStripStationSet_RunSummer2016.h</in>
+        <in>BmnGemStripStationSet_RunWinter2016.cxx</in>
+        <in>BmnGemStripStationSet_RunWinter2016.h</in>
+        <in>BmnGemStripStation_RunSpring2017.cxx</in>
+        <in>BmnGemStripStation_RunSpring2017.h</in>
+        <in>BmnGemStripStation_RunSummer2016.cxx</in>
+        <in>BmnGemStripStation_RunSummer2016.h</in>
+        <in>BmnGemStripStation_RunWinter2016.cxx</in>
+        <in>BmnGemStripStation_RunWinter2016.h</in>
+        <in>BmnGemTracking.cxx</in>
+        <in>BmnGemTracking.h</in>
+        <in>BmnKalmanFilter.cxx</in>
+        <in>BmnKalmanFilter.h</in>
+        <in>BmnManageQA.cxx</in>
+        <in>BmnManageQA.h</in>
+        <in>BmnMaterialEffects.cxx</in>
+        <in>BmnMaterialEffects.h</in>
+        <in>GemLinkDef.h</in>
+      </df>
+      <df name="generators">
+        <in>FairPlutoReactionGenerator.cxx</in>
+        <in>FairPlutoReactionGenerator.h</in>
+        <in>GenLinkDef.h</in>
+        <in>Mpd3fdGenerator.cxx</in>
+        <in>Mpd3fdGenerator.h</in>
+        <in>MpdGetNumEvents.cxx</in>
+        <in>MpdGetNumEvents.h</in>
+        <in>MpdHistoGenerator.cxx</in>
+        <in>MpdHistoGenerator.h</in>
+        <in>MpdHypYPtGenerator.cxx</in>
+        <in>MpdHypYPtGenerator.h</in>
+        <in>MpdLAQGSMGenerator.cxx</in>
+        <in>MpdLAQGSMGenerator.h</in>
+        <in>MpdMCEventHeader.cxx</in>
+        <in>MpdMCEventHeader.h</in>
+        <in>MpdPHSDGenerator.cxx</in>
+        <in>MpdPHSDGenerator.h</in>
+        <in>MpdPlutoGenerator.cxx</in>
+        <in>MpdPlutoGenerator.h</in>
+        <in>MpdRainGenerator.cxx</in>
+        <in>MpdRainGenerator.h</in>
+        <in>MpdUrqmdGenerator.cxx</in>
+        <in>MpdUrqmdGenerator.h</in>
+        <in>MpdVHLLEGenerator.cxx</in>
+        <in>MpdVHLLEGenerator.h</in>
+      </df>
+      <df name="geometry">
+      </df>
+      <df name="globaltracking">
+        <in>BmnDetectorSetup.cxx</in>
+        <in>BmnDetectorSetup.h</in>
+        <in>BmnGlobalTracking.cxx</in>
+        <in>BmnGlobalTracking.h</in>
+        <in>BmnHitFinderRun1.h</in>
+        <in>BmnMaterialInfo.h</in>
+        <in>BmnSRCTriggersCheck.cxx</in>
+        <in>BmnSRCTriggersCheck.h</in>
+        <in>BmnTriggersCheck.cxx</in>
+        <in>BmnTriggersCheck.h</in>
+        <in>BmnVertexFinder.cxx</in>
+        <in>BmnVertexFinder.h</in>
+        <in>GlobalTrackingLinkDef.h</in>
+      </df>
+      <df name="identification">
+        <in>BmnTofIdentification.cxx</in>
+        <in>BmnTofIdentification.h</in>
+        <in>IdentLinkDef.h</in>
+      </df>
+      <df name="input">
+      </df>
+      <df name="KF">
+        <df name="Interface">
+          <in>CbmEcalTrackExtrapolationKF.cxx</in>
+          <in>CbmEcalTrackExtrapolationKF.h</in>
+          <in>CbmGlobalTrackFitterKF.cxx</in>
+          <in>CbmGlobalTrackFitterKF.h</in>
+          <in>CbmKFStsHit.cxx</in>
+          <in>CbmKFStsHit.h</in>
+          <in>CbmKFTrack.cxx</in>
+          <in>CbmKFTrack.h</in>
+          <in>CbmKFVertex.cxx</in>
+          <in>CbmKFVertex.h</in>
+          <in>CbmPVFinderKF.cxx</in>
+          <in>CbmPVFinderKF.h</in>
+          <in>CbmStsFitPerformanceTask.cxx</in>
+          <in>CbmStsFitPerformanceTask.h</in>
+          <in>CbmStsKFSecondaryVertexFinder.cxx</in>
+          <in>CbmStsKFSecondaryVertexFinder.h</in>
+          <in>CbmStsKFTrackFitter.cxx</in>
+          <in>CbmStsKFTrackFitter.h</in>
+        </df>
+        <df name="KFParticle">
+          <in>KFParticle.cxx</in>
+          <in>KFParticle.h</in>
+          <in>KFParticleBase.cxx</in>
+          <in>KFParticleBase.h</in>
+          <in>KFParticleBaseSIMD.cxx</in>
+          <in>KFParticleBaseSIMD.h</in>
+          <in>KFParticleFinder.cxx</in>
+          <in>KFParticleFinder.h</in>
+          <in>KFParticleSIMD.cxx</in>
+          <in>KFParticleSIMD.h</in>
+        </df>
+        <df name="KFParticlesFinder">
+          <in>CbmKFParticleDatabase.cxx</in>
+          <in>CbmKFParticleDatabase.h</in>
+          <in>CbmKFParticlesFinder.cxx</in>
+          <in>CbmKFParticlesFinder.h</in>
+        </df>
+        <df name="KFQA">
+          <in>CbmKFPartEfficiencies.h</in>
+          <in>CbmKFParticlesFinderQA.cxx</in>
+          <in>CbmKFParticlesFinderQA.h</in>
+          <in>CbmKFTrErrMCPoints.cxx</in>
+          <in>CbmKFTrErrMCPoints.h</in>
+          <in>CbmKFTrackFitQA.cxx</in>
+          <in>CbmKFTrackFitQA.h</in>
+          <in>KFMCParticle.cxx</in>
+          <in>KFMCParticle.h</in>
+          <in>KFParticleMatch.cxx</in>
+          <in>KFParticleMatch.h</in>
+        </df>
+        <in>CbmKF.cxx</in>
+        <in>CbmKF.h</in>
+        <in>CbmKFFieldMath.cxx</in>
+        <in>CbmKFFieldMath.h</in>
+        <in>CbmKFHit.cxx</in>
+        <in>CbmKFHit.h</in>
+        <in>CbmKFMaterial.cxx</in>
+        <in>CbmKFMaterial.h</in>
+        <in>CbmKFMath.cxx</in>
+        <in>CbmKFMath.h</in>
+        <in>CbmKFParticle.cxx</in>
+        <in>CbmKFParticle.h</in>
+        <in>CbmKFParticleInterface.cxx</in>
+        <in>CbmKFParticleInterface.h</in>
+        <in>CbmKFParticle_simd.cxx</in>
+        <in>CbmKFParticle_simd.h</in>
+        <in>CbmKFPixelMeasurement.cxx</in>
+        <in>CbmKFPixelMeasurement.h</in>
+        <in>CbmKFPrimaryVertexFinder.cxx</in>
+        <in>CbmKFPrimaryVertexFinder.h</in>
+        <in>CbmKFSecondaryVertexFinder.cxx</in>
+        <in>CbmKFSecondaryVertexFinder.h</in>
+        <in>CbmKFTrackInterface.cxx</in>
+        <in>CbmKFTrackInterface.h</in>
+        <in>CbmKFUMeasurement.cxx</in>
+        <in>CbmKFUMeasurement.h</in>
+        <in>CbmKFVertexInterface.cxx</in>
+        <in>CbmKFVertexInterface.h</in>
+        <in>KFLinkDef.h</in>
+      </df>
+      <df name="land">
+        <in>BmnLANDHit.cxx</in>
+        <in>BmnLANDHit.h</in>
+        <in>BmnLANDHitProducer.cxx</in>
+        <in>BmnLANDHitProducer.h</in>
+        <in>BmnLANDLinkDef.h</in>
+      </df>
+      <df name="macro">
+        <df name="alignment">
+          <in>determine_align_corrections_bmn.C</in>
+          <in>gemAlignment.C</in>
+          <in>gemReco.C</in>
+          <in>globAlignment.C</in>
+          <in>plot_align_corrections_bmn.C</in>
+          <in>update_align_corrections_bmn.C</in>
+        </df>
+        <df name="dch">
+          <in>recoRunDCH.C</in>
+          <in>recoRunDCH_VP.C</in>
+        </df>
+        <df name="ecal">
+          <in>BmnDataConvertToRoot.C</in>
+          <in>BmnDataToRoot.C</in>
+          <in>BmnPreparationECAL.C</in>
+          <in>BmnResultsECAL.C</in>
+          <in>geometry_ecal_only.C</in>
+          <in>run_sim_bmn_ecal.C</in>
+        </df>
+        <df name="eventdisplay">
+          <df name="examples">
+            <in>run_exp_offline.C</in>
+            <in>run_exp_online.C</in>
+            <in>run_mc_online.C</in>
+          </df>
+          <df name="tdaq">
+            <in>monitor_event.C</in>
+            <in>pull_event.C</in>
+          </df>
+          <df name="www">
+          </df>
+          <in>eventdisplay.C</in>
+        </df>
+        <df name="gem">
+          <in>recoRun1.C</in>
+          <in>run_reco_gem.C</in>
+          <in>run_sim.C</in>
+        </df>
+        <df name="geometry">
+          <in>create_geom_bmnbd.C</in>
+          <in>create_geom_bmnecal.C</in>
+          <in>create_geom_bmnzdc.C</in>
+          <in>create_geom_recoil.C</in>
+          <in>create_rootgeom_DCH1.C</in>
+          <in>create_rootgeom_DCH1_run2.C</in>
+          <in>create_rootgeom_DCH1_run3.C</in>
+          <in>create_rootgeom_DCH2.C</in>
+          <in>create_rootgeom_DCH2_run2.C</in>
+          <in>create_rootgeom_DCH2_run3.C</in>
+          <in>create_rootgeom_DCH_RunWinter2016.C</in>
+          <in>create_rootgeom_GEMS.C</in>
+          <in>create_rootgeom_GEMS_1stConfig.C</in>
+          <in>create_rootgeom_GEMS_1stConfigShort.C</in>
+          <in>create_rootgeom_GEMS_2ndConfig.C</in>
+          <in>create_rootgeom_GEMS_AZ.C</in>
+          <in>create_rootgeom_GEMS_AZv2.C</in>
+          <in>create_rootgeom_GEMS_RunSpring2017.C</in>
+          <in>create_rootgeom_GEMS_RunSpring2018.C</in>
+          <in>create_rootgeom_GEMS_RunSummer2016.C</in>
+          <in>create_rootgeom_GEMS_RunWinter2016.C</in>
+          <in>create_rootgeom_GEMS_run1.C</in>
+          <in>create_rootgeom_GEMS_v2.C</in>
+          <in>create_rootgeom_GEMS_v3.C</in>
+          <in>create_rootgeom_MAGNET.C</in>
+          <in>create_rootgeom_MWPC1.C</in>
+          <in>create_rootgeom_MWPC1_run2.C</in>
+          <in>create_rootgeom_MWPC1_run3.C</in>
+          <in>create_rootgeom_MWPC2.C</in>
+          <in>create_rootgeom_MWPC2_run2.C</in>
+          <in>create_rootgeom_MWPC2_run3.C</in>
+          <in>create_rootgeom_MWPC3.C</in>
+          <in>create_rootgeom_MWPC3_run2.C</in>
+          <in>create_rootgeom_MWPC3_run3.C</in>
+          <in>create_rootgeom_MWPC_RunWinter2016.C</in>
+          <in>create_rootgeom_MWPC_SCAN.C</in>
+          <in>create_rootgeom_MWPC_SRC2018.C</in>
+          <in>create_rootgeom_SSD_v17a.C</in>
+          <in>create_rootgeom_Silicon_RunSpring2017.C</in>
+          <in>create_rootgeom_Silicon_RunSpring2018.C</in>
+          <in>create_rootgeom_Silicon_v1.C</in>
+          <in>create_rootgeom_TOF1.C</in>
+          <in>create_rootgeom_TOF400_RUN5.C</in>
+          <in>create_rootgeom_TOF400_RUN6.c</in>
+          <in>create_rootgeom_TOF400_RUN7.C</in>
+          <in>create_rootgeom_TOF400_RUN7_SRC.C</in>
+          <in>create_rootgeom_TOF700_run6.C</in>
+          <in>create_rootgeom_TOF700_run6_with_support.C</in>
+          <in>create_rootgeom_TOF700_run7.C</in>
+          <in>create_rootgeom_TOF700_run7_with_support.C</in>
+          <in>create_rootgeom_TOF700_support.h</in>
+          <in>create_stsdigipar_GEMS.C</in>
+          <in>create_stsdigipar_gem.C</in>
+          <in>gems_geo_40cm_12st.C</in>
+          <in>magnet.C</in>
+          <in>mpdshape.class.C</in>
+        </df>
+        <df name="globaltracking">
+          <in>checkBmnTrackExtrapolator.C</in>
+        </df>
+        <df name="howTo">
+          <in>matchGemTracks.C</in>
+          <in>readDst.C</in>
+          <in>readEve.C</in>
+        </df>
+        <df name="macros for waveforms">
+          <in>Trofimov.C</in>
+          <in>stack3_analog_1strip_extTrig_Dif.C</in>
+        </df>
+        <df name="magfield">
+          <in>sp41FieldMapCreator.C</in>
+          <in>testField.C</in>
+        </df>
+        <df name="miscellaneous">
+          <in>BmnDataSelector.C</in>
+          <in>BmnEventCounter.C</in>
+          <in>SRC_EventCounter.C</in>
+          <in>SrcEventCounter.C</in>
+        </df>
+        <df name="monitor">
+          <df name="public_html">
+            <df name="css">
+            </df>
+            <df name="DCH_detectors">
+            </df>
+            <df name="ECAL">
+            </df>
+            <df name="gem_detectors">
+            </df>
+            <df name="img">
+            </df>
+            <df name="LAND">
+            </df>
+            <df name="msc">
+            </df>
+            <df name="MWPC_detectors">
+            </df>
+            <df name="scripts">
+            </df>
+            <df name="Silicon">
+            </df>
+            <df name="SRC">
+            </df>
+            <df name="ToF400_detector">
+            </df>
+            <df name="ToF700_detector">
+            </df>
+            <df name="trigger_detectors">
+            </df>
+            <df name="ZDC">
+            </df>
+          </df>
+          <in>BatchDirectory.C</in>
+          <in>BatchList.C</in>
+          <in>monDecoder.C</in>
+          <in>monStreamDecoder.C</in>
+          <in>monitor.C</in>
+          <in>monitorSep.C</in>
+        </df>
+        <df name="mpd_scheduler">
+          <df name="examples">
+            <df name="batch">
+            </df>
+            <df name="profile">
+            </df>
+          </df>
+          <df name="proof">
+          </df>
+          <df name="src">
+            <df name="tmp">
+            </df>
+            <df name="union">
+              <in>merge_result.C</in>
+            </df>
+            <in>batch_select.h</in>
+            <in>db_settings.h</in>
+            <in>function_set.h</in>
+            <in>mpd-scheduler.cpp</in>
+          </df>
+        </df>
+        <df name="mwpc">
+          <in>read_mwpc1_688.C</in>
+        </df>
+        <df name="NA61">
+          <in>ComputeOccupancy.C</in>
+          <in>CutOccupancyFile.C</in>
+          <in>line3Dfit.C</in>
+        </df>
+        <df name="physics">
+          <in>LambdaAnal.C</in>
+          <in>lambdaQA.C</in>
+          <in>testTrackingLambda.C</in>
+        </df>
+        <df name="profiling">
+          <in>eventdisplay.cxx</in>
+          <in>run_reco_bmn.cxx</in>
+          <in>run_sim_bmn.cxx</in>
+        </df>
+        <df name="raw">
+          <in>BmnData.C</in>
+          <in>BmnDataConvertToRoot.C</in>
+          <in>BmnDataToRoot.C</in>
+          <in>BmnWriteRawInfo.C</in>
+          <in>DchDigitsAnalysis.C</in>
+          <in>DchDigitsAnalysisHist.C</in>
+          <in>GemDigitsAnalysis.C</in>
+          <in>MwpcDigitsAnalysisHist.C</in>
+          <in>Raw2Digit.C</in>
+          <in>RawToRoot.C</in>
+          <in>tdc72_ChannelConverter.C</in>
+          <in>testRaw2Digit.C</in>
+          <in>testRaw2DigitMwpc.C</in>
+        </df>
+        <df name="run">
+          <df name="geometry_run">
+            <in>geometry_run1.C</in>
+            <in>geometry_run2.C</in>
+            <in>geometry_run3.C</in>
+            <in>geometry_run4.C</in>
+            <in>geometry_run5.C</in>
+            <in>geometry_run6.C</in>
+            <in>geometry_src_run7.C</in>
+          </df>
+          <df name="QA">
+            <in>bmn_qa_generator.C</in>
+          </df>
+          <in>RadLenAna.C</in>
+          <in>RadLenSim.C</in>
+          <in>bmnloadlibs.C</in>
+          <in>geometry.C</in>
+          <in>run_reco_bmn.C</in>
+          <in>run_reco_src.C</in>
+          <in>run_sim_bmn.C</in>
+        </df>
+        <df name="srcAnalysis">
+          <df name="dch">
+            <in>recoRunDCH_VP.C</in>
+          </df>
+          <df name="onlineGUI">
+            <df name="ref">
+            </df>
+            <df name="src">
+              <in>Arms_TDC_digitize.C</in>
+              <in>Arms_TQDC_digitize.C</in>
+              <in>BCs_TDC_digitize.C</in>
+              <in>BCs_TQDC_digitize.C</in>
+              <in>Others_digitize.C</in>
+              <in>getNum.C</in>
+              <in>monGUI.C</in>
+            </df>
+          </df>
+          <df name="qualcheck">
+            <df name="src">
+              <in>Others_digitize.C</in>
+            </df>
+          </df>
+          <df name="tof400">
+            <in>SRC_LRcorrection.C</in>
+            <in>SRC_TimeShiftCorr.C</in>
+            <in>tof.cpp</in>
+          </df>
+          <df name="tof700">
+            <in>BmnDataConvertToRoot.C</in>
+            <in>BmnDataToRoot.C</in>
+            <in>BmnPreparationTOF700.C</in>
+            <in>BmnSlewingTOF700.C</in>
+            <in>tofhists.C</in>
+          </df>
+          <df name="tracking">
+            <in>SRCEvent.cpp</in>
+            <in>SRCEvent.h</in>
+            <in>convert.C</in>
+            <in>track_arms.cpp</in>
+          </df>
+        </df>
+        <df name="steering">
+          <in>readSteeringFile.C</in>
+        </df>
+        <df name="tof_400">
+          <in>ToF400DigitAnalysis_period5.c</in>
+          <in>ToF400DigitAnalysis_period7.C</in>
+          <in>ToF400_Digit2Hit_Run7_SRC.C</in>
+          <in>Tof400Alignment.C</in>
+          <in>Tof400DigitAnalysis_period6.C</in>
+          <in>Tof400Identification.c</in>
+          <in>Tof400LRcorrection_period6.C</in>
+          <in>Tof400LRcorrection_period7.C</in>
+          <in>add_Tof1_mapping.C</in>
+          <in>digitConvertor.C</in>
+          <in>rootlogon.C</in>
+          <in>rotateAxis.C</in>
+          <in>run_reco_TOF1.C</in>
+        </df>
+        <df name="tof_700">
+          <df name="identification">
+            <in>BmnTracksTOF700.C</in>
+            <in>addMomentumToRoot.C</in>
+            <in>recoRunDCH_VP.C</in>
+            <in>tof700_tracks_aclic.C</in>
+            <in>tof700_tracks_gem_aclic.C</in>
+            <in>tof700_tracks_results_aclic.C</in>
+          </df>
+          <in>BmnPreparationTOF700.C</in>
+          <in>BmnResultsTOF700.C</in>
+          <in>BmnSlewingTOF700.C</in>
+          <in>Preparation_TOF700.C</in>
+          <in>Results_TOF700.C</in>
+          <in>Slewing_TOF700.C</in>
+        </df>
+        <df name="zdc">
+          <in>BmnResultsZDC.C</in>
+          <in>Calibration_all_ZDC.C</in>
+          <in>Calibration_cluster_ZDC.C</in>
+          <in>Calibration_numbers_ZDC.C</in>
+          <in>Calibration_test_ZDC.C</in>
+          <in>Draw_ZDC.C</in>
+          <in>Preparation_ZDC.C</in>
+          <in>Results_ZDC.C</in>
+          <in>extract_zdc_histo_from_reco.C</in>
+          <in>geometry_with_zdc.C</in>
+          <in>run_reco_zdc.C</in>
+          <in>run_sim_bmn_zdc.C</in>
+          <in>testRaw2Digit_only_ZDC.C</in>
+          <in>testZdcScheme.C</in>
+        </df>
+      </df>
+      <df name="monitor">
+        <in>BmnDataReceiver.cxx</in>
+        <in>BmnDataReceiver.h</in>
+        <in>BmnHist.cxx</in>
+        <in>BmnHist.h</in>
+        <in>BmnHistDch.cxx</in>
+        <in>BmnHistDch.h</in>
+        <in>BmnHistECAL.cxx</in>
+        <in>BmnHistECAL.h</in>
+        <in>BmnHistGem.cxx</in>
+        <in>BmnHistGem.h</in>
+        <in>BmnHistLAND.cxx</in>
+        <in>BmnHistLAND.h</in>
+        <in>BmnHistMwpc.cxx</in>
+        <in>BmnHistMwpc.h</in>
+        <in>BmnHistSilicon.cxx</in>
+        <in>BmnHistSilicon.h</in>
+        <in>BmnHistSrc.cxx</in>
+        <in>BmnHistSrc.h</in>
+        <in>BmnHistToF.cxx</in>
+        <in>BmnHistToF.h</in>
+        <in>BmnHistToF700.cxx</in>
+        <in>BmnHistToF700.h</in>
+        <in>BmnHistTrigger.cxx</in>
+        <in>BmnHistTrigger.h</in>
+        <in>BmnHistZDC.cxx</in>
+        <in>BmnHistZDC.h</in>
+        <in>BmnMonitor.cxx</in>
+        <in>BmnMonitor.h</in>
+        <in>BmnOnlineDecoder.cxx</in>
+        <in>BmnOnlineDecoder.h</in>
+        <in>BmnRunInfo.cxx</in>
+        <in>BmnRunInfo.h</in>
+        <in>MonitorLinkDef.h</in>
+      </df>
+      <df name="mwpc">
+        <in>BmnMwpc.cxx</in>
+        <in>BmnMwpc.h</in>
+        <in>BmnMwpcContFact.cxx</in>
+        <in>BmnMwpcContFact.h</in>
+        <in>BmnMwpcGeo.cxx</in>
+        <in>BmnMwpcGeo.h</in>
+        <in>BmnMwpcGeoPar.cxx</in>
+        <in>BmnMwpcGeoPar.h</in>
+        <in>BmnMwpcGeometry.cxx</in>
+        <in>BmnMwpcGeometry.h</in>
+        <in>BmnMwpcGeometrySRC.cxx</in>
+        <in>BmnMwpcGeometrySRC.h</in>
+        <in>BmnMwpcHitFinder.cxx</in>
+        <in>BmnMwpcHitFinder.h</in>
+        <in>BmnMwpcHitFinderOLD.cxx</in>
+        <in>BmnMwpcHitFinderOLD.h</in>
+        <in>BmnMwpcHitFinder_old.cxx</in>
+        <in>BmnMwpcHitProducer.cxx</in>
+        <in>BmnMwpcHitProducer.h</in>
+        <in>BmnMwpcPoint.cxx</in>
+        <in>BmnMwpcPoint.h</in>
+        <in>BmnMwpcTrack.cxx</in>
+        <in>BmnMwpcTrack.h</in>
+        <in>BmnMwpcTrackFinder.cxx</in>
+        <in>BmnMwpcTrackFinder.h</in>
+        <in>LinkDef.h</in>
+      </df>
+      <df name="NA61">
+        <in>LinkDef.h</in>
+        <in>Occupancy.cxx</in>
+        <in>Occupancy.h</in>
+        <in>TmpContainer.cxx</in>
+        <in>TmpContainer.h</in>
+      </df>
+      <df name="parameters">
+        <df name="tof2_slewing">
+        </df>
+        <df name="zdc">
+        </df>
+      </df>
+      <df name="passive">
+        <in>FairCave.cxx</in>
+        <in>FairCave.h</in>
+        <in>FairGeoCave.cxx</in>
+        <in>FairGeoCave.h</in>
+        <in>FairGeoMagnet.cxx</in>
+        <in>FairGeoMagnet.h</in>
+        <in>FairGeoPassivePar.cxx</in>
+        <in>FairGeoPassivePar.h</in>
+        <in>FairGeoPipe.cxx</in>
+        <in>FairGeoPipe.h</in>
+        <in>FairGeoTarget.cxx</in>
+        <in>FairGeoTarget.h</in>
+        <in>FairMagnet.cxx</in>
+        <in>FairMagnet.h</in>
+        <in>FairPassiveContFact.cxx</in>
+        <in>FairPassiveContFact.h</in>
+        <in>FairPipe.cxx</in>
+        <in>FairPipe.h</in>
+        <in>FairTarget.cxx</in>
+        <in>FairTarget.h</in>
+        <in>PassiveLinkDef.h</in>
+      </df>
+      <df name="physics">
+        <df name="particles">
+          <in>BmnParticlePair.cxx</in>
+          <in>BmnParticlePair.h</in>
+          <in>BmnTwoParticleDecay.cxx</in>
+          <in>BmnTwoParticleDecay.h</in>
+          <in>LinkDef.h</in>
+        </df>
+      </df>
+      <df name="psd">
+        <in>CbmGeoPsd.cxx</in>
+        <in>CbmGeoPsd.h</in>
+        <in>CbmGeoPsdPar.cxx</in>
+        <in>CbmGeoPsdPar.h</in>
+        <in>CbmPsd.cxx</in>
+        <in>CbmPsd.h</in>
+        <in>CbmPsdContFact.cxx</in>
+        <in>CbmPsdContFact.h</in>
+        <in>CbmPsdHitProducer.cxx</in>
+        <in>CbmPsdHitProducer.h</in>
+        <in>CbmPsdIdealDigitizer.cxx</in>
+        <in>CbmPsdIdealDigitizer.h</in>
+        <in>CbmPsdReactionPlaneMaker.cxx</in>
+        <in>CbmPsdReactionPlaneMaker.h</in>
+        <in>CbmPsdv1.cxx</in>
+        <in>CbmPsdv1.h</in>
+        <in>CbmPsdvFW.cxx</in>
+        <in>CbmPsdvFW.h</in>
+        <in>PsdLinkDef.h</in>
+      </df>
+      <df name="QA">
+        <df name="report">
+          <in>BmnDrawHist.cxx</in>
+          <in>BmnDrawHist.h</in>
+          <in>BmnHistManager.cxx</in>
+          <in>BmnHistManager.h</in>
+          <in>BmnHtmlReportElement.cxx</in>
+          <in>BmnHtmlReportElement.h</in>
+          <in>BmnReport.cxx</in>
+          <in>BmnReport.h</in>
+          <in>BmnReportElement.h</in>
+          <in>BmnSimulationReport.cxx</in>
+          <in>BmnSimulationReport.h</in>
+          <in>BmnStudyReport.cxx</in>
+          <in>BmnStudyReport.h</in>
+        </df>
+        <in>BmnAcceptanceFunction.h</in>
+        <in>BmnCheckBrem.cxx</in>
+        <in>BmnCheckBrem.h</in>
+        <in>BmnCheckEnergyLossMuons.cxx</in>
+        <in>BmnCheckEnergyLossMuons.h</in>
+        <in>BmnClusteringQa.cxx</in>
+        <in>BmnClusteringQa.h</in>
+        <in>BmnClusteringQaReport.cxx</in>
+        <in>BmnClusteringQaReport.h</in>
+        <in>BmnClusteringQaStudyReport.cxx</in>
+        <in>BmnClusteringQaStudyReport.h</in>
+        <in>BmnFieldApproximationQa.cxx</in>
+        <in>BmnFieldApproximationQa.h</in>
+        <in>BmnFieldApproximationQaReport.cxx</in>
+        <in>BmnFieldApproximationQaReport.h</in>
+        <in>BmnFieldQa.cxx</in>
+        <in>BmnFieldQa.h</in>
+        <in>BmnFieldQaReport.cxx</in>
+        <in>BmnFieldQaReport.h</in>
+        <in>BmnFitQa.cxx</in>
+        <in>BmnFitQa.h</in>
+        <in>BmnFitQaReport.cxx</in>
+        <in>BmnFitQaReport.h</in>
+        <in>BmnFitQaStudyReport.cxx</in>
+        <in>BmnFitQaStudyReport.h</in>
+        <in>BmnMCPoint.h</in>
+        <in>BmnMCTrack.cxx</in>
+        <in>BmnMCTrack.h</in>
+        <in>BmnMCTrackCreator.cxx</in>
+        <in>BmnMCTrackCreator.h</in>
+        <in>BmnMatchRecoToMC.cxx</in>
+        <in>BmnMatchRecoToMC.h</in>
+        <in>BmnQALinkDef.h</in>
+        <in>BmnRadLengthGenerator.cxx</in>
+        <in>BmnRadLengthGenerator.h</in>
+        <in>BmnRadLengthQa.cxx</in>
+        <in>BmnRadLengthQa.h</in>
+        <in>BmnRadLengthQaReport.cxx</in>
+        <in>BmnRadLengthQaReport.h</in>
+        <in>BmnResultChecker.cxx</in>
+        <in>BmnResultChecker.h</in>
+        <in>BmnTofQa.cxx</in>
+        <in>BmnTofQa.h</in>
+        <in>BmnTofQaReport.cxx</in>
+        <in>BmnTofQaReport.h</in>
+        <in>BmnTrackingQa.cxx</in>
+        <in>BmnTrackingQa.h</in>
+        <in>BmnTrackingQaReport.cxx</in>
+        <in>BmnTrackingQaReport.h</in>
+        <in>BmnTrackingQaStudyReport.cxx</in>
+        <in>BmnTrackingQaStudyReport.h</in>
+        <in>BmnUtils.cxx</in>
+        <in>BmnUtils.h</in>
+      </df>
+      <df name="recoil">
+        <in>BmnRecoil.cxx</in>
+        <in>BmnRecoil.h</in>
+        <in>BmnRecoilContFact.cxx</in>
+        <in>BmnRecoilContFact.h</in>
+        <in>BmnRecoilGeo.cxx</in>
+        <in>BmnRecoilGeo.h</in>
+        <in>BmnRecoilGeoPar.cxx</in>
+        <in>BmnRecoilGeoPar.h</in>
+        <in>BmnRecoilLinkDef.h</in>
+        <in>BmnRecoilPoint.cxx</in>
+        <in>BmnRecoilPoint.h</in>
+      </df>
+      <df name="silicon">
+        <df name="XMLConfigs">
+        </df>
+        <in>BmnSilicon.cxx</in>
+        <in>BmnSilicon.h</in>
+        <in>BmnSiliconConfiguration.h</in>
+        <in>BmnSiliconDigit.cxx</in>
+        <in>BmnSiliconDigit.h</in>
+        <in>BmnSiliconDigitizer.cxx</in>
+        <in>BmnSiliconDigitizer.h</in>
+        <in>BmnSiliconHit.cxx</in>
+        <in>BmnSiliconHit.h</in>
+        <in>BmnSiliconHitMaker.cxx</in>
+        <in>BmnSiliconHitMaker.h</in>
+        <in>BmnSiliconLayer.cxx</in>
+        <in>BmnSiliconLayer.h</in>
+        <in>BmnSiliconModule.cxx</in>
+        <in>BmnSiliconModule.h</in>
+        <in>BmnSiliconPoint.cxx</in>
+        <in>BmnSiliconPoint.h</in>
+        <in>BmnSiliconStation.cxx</in>
+        <in>BmnSiliconStation.h</in>
+        <in>BmnSiliconStationSet.cxx</in>
+        <in>BmnSiliconStationSet.h</in>
+        <in>BmnSiliconTrack.cxx</in>
+        <in>BmnSiliconTrack.h</in>
+        <in>SiliconLinkDef.h</in>
+      </df>
+      <df name="ssd">
+        <in>BmnSSD.cxx</in>
+        <in>BmnSSD.h</in>
+        <in>BmnSSDPoint.cxx</in>
+        <in>BmnSSDPoint.h</in>
+        <in>SSDLinkDef.h</in>
+      </df>
+      <df name="steering">
+        <in>BmnSteeringGemTracking.cxx</in>
+        <in>BmnSteeringGemTracking.h</in>
+        <in>SteeringLinkDef.h</in>
+      </df>
+      <df name="sts">
+        <df name="setup">
+          <in>CbmStsAddress.cxx</in>
+          <in>CbmStsAddress.h</in>
+          <in>CbmStsElement.cxx</in>
+          <in>CbmStsElement.h</in>
+          <in>CbmStsModule.cxx</in>
+          <in>CbmStsModule.h</in>
+          <in>CbmStsSensorPoint.cxx</in>
+          <in>CbmStsSensorPoint.h</in>
+          <in>CbmStsSensorType.cxx</in>
+          <in>CbmStsSensorType.h</in>
+          <in>CbmStsSensorTypeDssd.cxx</in>
+          <in>CbmStsSensorTypeDssd.h</in>
+          <in>CbmStsSenzor.cxx</in>
+          <in>CbmStsSenzor.h</in>
+          <in>CbmStsSetup.cxx</in>
+          <in>CbmStsSetup.h</in>
+        </df>
+        <df name="test">
+          <in>CbmStsAddress_test.C</in>
+        </df>
+        <in>CbmGeoSts.cxx</in>
+        <in>CbmGeoSts.h</in>
+        <in>CbmGeoStsPar.cxx</in>
+        <in>CbmGeoStsPar.h</in>
+        <in>CbmParTest.cxx</in>
+        <in>CbmParTest.h</in>
+        <in>CbmSts.cxx</in>
+        <in>CbmSts.h</in>
+        <in>CbmStsClusterFinder.cxx</in>
+        <in>CbmStsClusterFinder.h</in>
+        <in>CbmStsContFact.cxx</in>
+        <in>CbmStsContFact.h</in>
+        <in>CbmStsDigiPar.cxx</in>
+        <in>CbmStsDigiPar.h</in>
+        <in>CbmStsDigiScheme.cxx</in>
+        <in>CbmStsDigiScheme.h</in>
+        <in>CbmStsDigitize.cxx</in>
+        <in>CbmStsDigitize.h</in>
+        <in>CbmStsDigitizeTb.cxx</in>
+        <in>CbmStsDigitizeTb.h</in>
+        <in>CbmStsFindHits.cxx</in>
+        <in>CbmStsFindHits.h</in>
+        <in>CbmStsFindHitsQa.cxx</in>
+        <in>CbmStsFindHitsQa.h</in>
+        <in>CbmStsFindTracks.cxx</in>
+        <in>CbmStsFindTracks.h</in>
+        <in>CbmStsFindTracksQa.cxx</in>
+        <in>CbmStsFindTracksQa.h</in>
+        <in>CbmStsFitTracks.cxx</in>
+        <in>CbmStsFitTracks.h</in>
+        <in>CbmStsHitProducerIdeal.cxx</in>
+        <in>CbmStsHitProducerIdeal.h</in>
+        <in>CbmStsIdealDigitize.cxx</in>
+        <in>CbmStsIdealDigitize.h</in>
+        <in>CbmStsIdealFindHits.cxx</in>
+        <in>CbmStsIdealFindHits.h</in>
+        <in>CbmStsIdealMatchHits.cxx</in>
+        <in>CbmStsIdealMatchHits.h</in>
+        <in>CbmStsMatchHits.cxx</in>
+        <in>CbmStsMatchHits.h</in>
+        <in>CbmStsMatchTracks.cxx</in>
+        <in>CbmStsMatchTracks.h</in>
+        <in>CbmStsParAsciiFileIo.cxx</in>
+        <in>CbmStsParAsciiFileIo.h</in>
+        <in>CbmStsParRootFileIo.cxx</in>
+        <in>CbmStsParRootFileIo.h</in>
+        <in>CbmStsRadTool.cxx</in>
+        <in>CbmStsRadTool.h</in>
+        <in>CbmStsRealClusterFinder.cxx</in>
+        <in>CbmStsRealClusterFinder.h</in>
+        <in>CbmStsRealDigitize.cxx</in>
+        <in>CbmStsRealDigitize.h</in>
+        <in>CbmStsRealFindHits.cxx</in>
+        <in>CbmStsRealFindHits.h</in>
+        <in>CbmStsRealMatchHits.cxx</in>
+        <in>CbmStsRealMatchHits.h</in>
+        <in>CbmStsReconstructionQa.cxx</in>
+        <in>CbmStsReconstructionQa.h</in>
+        <in>CbmStsSector.cxx</in>
+        <in>CbmStsSector.h</in>
+        <in>CbmStsSectorDigiPar.cxx</in>
+        <in>CbmStsSectorDigiPar.h</in>
+        <in>CbmStsSensor.cxx</in>
+        <in>CbmStsSensor.h</in>
+        <in>CbmStsSensorDigiPar.cxx</in>
+        <in>CbmStsSensorDigiPar.h</in>
+        <in>CbmStsSimulationQa.cxx</in>
+        <in>CbmStsSimulationQa.h</in>
+        <in>CbmStsStation.cxx</in>
+        <in>CbmStsStation.h</in>
+        <in>CbmStsStationDigiPar.cxx</in>
+        <in>CbmStsStationDigiPar.h</in>
+        <in>CbmStsTrackFinderIdeal.cxx</in>
+        <in>CbmStsTrackFinderIdeal.h</in>
+        <in>CbmStsTrackFitterIdeal.cxx</in>
+        <in>CbmStsTrackFitterIdeal.h</in>
+        <in>StsLinkDef.h</in>
+      </df>
+      <df name="tof">
+        <in>BmnTOF.cxx</in>
+        <in>BmnTOF.h</in>
+        <in>BmnTOFContFact.cxx</in>
+        <in>BmnTOFContFact.h</in>
+        <in>BmnTOFGeo.cxx</in>
+        <in>BmnTOFGeo.h</in>
+        <in>BmnTOFGeoPar.cxx</in>
+        <in>BmnTOFGeoPar.h</in>
+        <in>BmnTOFLinkDef.h</in>
+        <in>BmnTOFPoint.cxx</in>
+        <in>BmnTOFPoint.h</in>
+        <in>BmnTofGeoUtils.cxx</in>
+        <in>BmnTofGeoUtils.h</in>
+        <in>BmnTofHitProducer.cxx</in>
+        <in>BmnTofHitProducer.h</in>
+        <in>BmnTofHitProducerIdeal.cxx</in>
+        <in>BmnTofHitProducerIdeal.h</in>
+      </df>
+      <df name="tof1">
+        <in>BmnTOF1.cxx</in>
+        <in>BmnTOF1.h</in>
+        <in>BmnTOF1ContFact.cxx</in>
+        <in>BmnTOF1ContFact.h</in>
+        <in>BmnTOF1Conteiner.cxx</in>
+        <in>BmnTOF1Conteiner.h</in>
+        <in>BmnTOF1Detector.cxx</in>
+        <in>BmnTOF1Detector.h</in>
+        <in>BmnTOF1Geo.cxx</in>
+        <in>BmnTOF1Geo.h</in>
+        <in>BmnTOF1GeoPar.cxx</in>
+        <in>BmnTOF1GeoPar.h</in>
+        <in>BmnTOF1LinkDef.h</in>
+        <in>BmnTOF1Point.cxx</in>
+        <in>BmnTOF1Point.h</in>
+        <in>BmnTOF1TDC.cxx</in>
+        <in>BmnTOF1TDC.h</in>
+        <in>BmnTof1GeoUtils.cxx</in>
+        <in>BmnTof1GeoUtils.h</in>
+        <in>BmnTof1HitProducer.cxx</in>
+        <in>BmnTof1HitProducer.h</in>
+        <in>BmnTof1HitProducerIdeal.cxx</in>
+        <in>BmnTof1HitProducerIdeal.h</in>
+      </df>
+      <df name="uni_db">
+        <df name="db_classes">
+          <in>UniDbDetector.cxx</in>
+          <in>UniDbDetector.h</in>
+          <in>UniDbDetectorParameter.cxx</in>
+          <in>UniDbDetectorParameter.h</in>
+          <in>UniDbParameter.cxx</in>
+          <in>UniDbParameter.h</in>
+          <in>UniDbRun.cxx</in>
+          <in>UniDbRun.h</in>
+          <in>UniDbRunGeometry.cxx</in>
+          <in>UniDbRunGeometry.h</in>
+          <in>UniDbRunPeriod.cxx</in>
+          <in>UniDbRunPeriod.h</in>
+          <in>UniDbSimulationFile.cxx</in>
+          <in>UniDbSimulationFile.h</in>
+        </df>
+        <df name="docs">
+          <df name="ref_man">
+            <df name="search">
+            </df>
+          </df>
+        </df>
+        <df name="elog_classes">
+          <in>ElogDbAttachment.cxx</in>
+          <in>ElogDbAttachment.h</in>
+          <in>ElogDbBeam.cxx</in>
+          <in>ElogDbBeam.h</in>
+          <in>ElogDbPerson.cxx</in>
+          <in>ElogDbPerson.h</in>
+          <in>ElogDbRecord.cxx</in>
+          <in>ElogDbRecord.h</in>
+          <in>ElogDbTarget.cxx</in>
+          <in>ElogDbTarget.h</in>
+          <in>ElogDbTrigger.cxx</in>
+          <in>ElogDbTrigger.h</in>
+          <in>ElogDbType.cxx</in>
+          <in>ElogDbType.h</in>
+        </df>
+        <df name="examples">
+          <df name="DCH">
+            <in>add_DCH_mapping.C</in>
+          </df>
+          <df name="elog">
+            <in>selecting_records.C</in>
+          </df>
+          <df name="GEM">
+            <in>add_GEM_constants.C</in>
+            <in>add_GEM_local_mapping.C</in>
+            <in>add_GEM_mapping.C</in>
+            <in>add_GEM_pedestals.C</in>
+            <in>add_lorShift.C</in>
+            <in>get_lorShift.C</in>
+          </df>
+          <df name="tango">
+            <in>tango_avg_field.C</in>
+            <in>tango_gem_trip.C</in>
+            <in>tango_gem_u.C</in>
+          </df>
+          <df name="temp">
+            <in>avg_run_size.C</in>
+            <in>move_field_2_parameter.C</in>
+            <in>move_field_2_run.C</in>
+            <in>parse_elog.C</in>
+          </df>
+          <df name="TOF1">
+            <in>CreateMapTof400_BMN_12_2016.c</in>
+            <in>CreateMapTof400_RUN7.C</in>
+            <in>GetMapToF400.c</in>
+            <in>add_Tof1_INL.C</in>
+            <in>add_Tof1_mapping.C</in>
+            <in>delete_Tof1_INL.c</in>
+            <in>delete_Tof1_mapping.c</in>
+            <in>get_parameter_value_inl.C</in>
+          </df>
+          <df name="TRIG">
+            <in>add_TRIG_mapping.C</in>
+            <in>run_beam_info.C</in>
+          </df>
+          <in>add_new_parameter.C</in>
+          <in>add_parameter_value.C</in>
+          <in>add_parameter_value_complex.C</in>
+          <in>change_1detector_geometry.C</in>
+          <in>delete_parameter_value.C</in>
+          <in>get_parameter_root_file.C</in>
+          <in>get_parameter_value.C</in>
+          <in>get_parameter_value_complex.C</in>
+          <in>get_root_geometry.C</in>
+          <in>histo_noise.C</in>
+          <in>print_parameter_values.C</in>
+          <in>selecting_parameters.C</in>
+          <in>selecting_runs.C</in>
+          <in>set_detector_run_on.C</in>
+          <in>set_parameter_root_file.C</in>
+          <in>write_geometry_to_db.C</in>
+        </df>
+        <df name="macros">
+          <df name="parse_schemes">
+          </df>
+          <in>generate_cxx_from_db.C</in>
+          <in>parse_data_to_db.C</in>
+          <in>test_db.C</in>
+          <in>write_geo_to_db.C</in>
+        </df>
+        <df name="scheme">
+        </df>
+        <in>UniDbConnection.cxx</in>
+        <in>UniDbConnection.h</in>
+        <in>UniDbGenerateClasses.cxx</in>
+        <in>UniDbGenerateClasses.h</in>
+        <in>UniDbGeoConverter.cxx</in>
+        <in>UniDbGeoConverter.h</in>
+        <in>UniDbLinkDef.h</in>
+        <in>UniDbParser.cxx</in>
+        <in>UniDbParser.h</in>
+        <in>UniDbSearchCondition.cxx</in>
+        <in>UniDbSearchCondition.h</in>
+        <in>UniDbTangoData.cxx</in>
+        <in>UniDbTangoData.h</in>
+        <in>db_settings.h</in>
+        <in>db_structures.h</in>
+        <in>function_set.h</in>
+        <in>show_experiment_files.cxx</in>
+        <in>show_simulation_files.cxx</in>
+      </df>
+      <df name="waveforms">
+        <in>LinkDef.h</in>
+        <in>Waveform.cxx</in>
+        <in>Waveform.h</in>
+      </df>
+      <df name="zdc">
+        <in>BmnZdc.cxx</in>
+        <in>BmnZdc.h</in>
+        <in>BmnZdcContFact.cxx</in>
+        <in>BmnZdcContFact.h</in>
+        <in>BmnZdcDigi.cxx</in>
+        <in>BmnZdcDigi.h</in>
+        <in>BmnZdcDigiPar.cxx</in>
+        <in>BmnZdcDigiPar.h</in>
+        <in>BmnZdcDigiProducer.cxx</in>
+        <in>BmnZdcDigiProducer.h</in>
+        <in>BmnZdcDigiScheme.cxx</in>
+        <in>BmnZdcDigiScheme.h</in>
+        <in>BmnZdcGeo.cxx</in>
+        <in>BmnZdcGeo.h</in>
+        <in>BmnZdcGeoPar.cxx</in>
+        <in>BmnZdcGeoPar.h</in>
+        <in>BmnZdcLinkDef.h</in>
+        <in>BmnZdcPoint.cxx</in>
+        <in>BmnZdcPoint.h</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

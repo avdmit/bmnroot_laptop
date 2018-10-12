@@ -60,6 +60,7 @@ private:
     TString fName;
     vector<TGraph*> fGraphs;
     vector<Double_t> kMaximum, kMinimum;
+    Bool_t fNear;
     //    vector<Double_t> kMaximumDif, kMinimumDif;
     Double_t maxTime, minTime, TimeDiff;
     TGraph * CiDif[kMaxWavefoms / 2];
@@ -67,6 +68,7 @@ private:
 
     vector<TH2D*> DeltaTimeVsAmp;
     vector<TH2D*> TimeVsAmp;
+    vector<TH2D*> TimeVsAmp2;
     Short_t number_event1, number_event2, number_event3, number_event4, number_event5;
     Bool_t FirstRead, DiffSig, MakeTHs;
     Char_t name1[100], nameJPG[100], str1[256], str2[256];
@@ -81,10 +83,13 @@ private:
     TTree fTree4Save;
     TClonesArray fArrayConteiner;
 
-    void FindSecondMax();
+    vector<TGraph*> outVectorGraphs2;
+
+    void FindSecondMax(vector<Double_t>);
     vector<TGraph*> DiffSignal(vector<TGraph*>, Double_t*, Double_t*);
     vector<Double_t> PreciseFindMax(vector<Double_t>);
     vector<Double_t> FindBaseLane();
+    Bool_t CheckPlacementOfMax(Double_t, Double_t, Short_t, Short_t);
     ClassDef(Waveform, 2)
 
 };

@@ -1,67 +1,34 @@
 #include "../run/bmnloadlibs.C"
 #include <cstdlib>
 
-
-
-const Short_t nWaveforms = 4;
-
-void stack3_analog_1strip_extTrig_Dif(const char *fname = "/home/alex/Documents/3stack_analog_1strip_extTrig_Dif") {
+void Trofimov(const char *fname = "/home/alex/Documents/university") {
 
 #if ROOT_VERSION_CODE < ROOT_VERSION(5,99,99)
     gROOT->LoadMacro("$VMCWORKDIR/macro/run/bmnloadlibs.C");
 #endif
     bmnloadlibs(); // load BmnRoot libraries
 
-    //    UShort_t nStep = 1002; //количество строчек в таблице минус шапка
-
-    //    Char_t name1[21], nameJPG[100], str1[256];
-    //    int i, kmax0, kmax1, kmax2, kmax3, kmin0, kmin1, kmin2, kmin3, repead = 0;
-    //    int number_event1 = 1, number_event2 = 0, number_event3 = 0, number_event4 = 0, number_event5 = 0;
-
-    //    Double_t * C_T[nWaveforms], *C_AMP[nWaveforms];
-
-    TH1D *Hist_AMP_C1 = new TH1D("Hist_AMP_C1", "Hist_AMP_C1", 300, 0, 200);
-    TH1D *Hist_dt_lC1 = new TH1D("Hist_dt_lC1", "Hist_dt_lC1", 400, -140, -40);
-    TH1D *Hist_dt_rC1 = new TH1D("Hist_dt_rC1", "Hist_dt_rC1", 400, -140, -40);
-
 
     TCanvas *c1 = new TCanvas("c1", "c1", 0, 0, 1000, 600);
     c1->Divide(1, 2);
     c1->SetGridx();
     c1->SetGridy();
-
-
-    TCanvas *c2 = new TCanvas("c2", "c2", 0, 0, 800, 600);
-    c2->Divide(1, 2);
-    c2->SetGridx();
-    c2->SetGridy();
-
-    TString namedir;
-    TString fnameSTR = fname;
-    namedir = fnameSTR + "_result";
-    char outname[100];
-    sprintf(outname, "%s_result/avdresult.root", fname);
-
-    const Short_t dir_err = system("mkdir -p " + namedir);
-    if (dir_err == -1) {
-        printf("Error creating directory!");
-        cout << endl;
-        exit(1);
-    }
+    TString outname = "11.10.2018.root";
 
     TFile * hfile = new TFile(outname, "RECREATE"); //создание рутовского файла куда будет сохраняться гистограмма
     TList *histlist = new TList();
 
-    //    histlist->Add(Hist_AMP_C1);
-    //    histlist->Add(Hist_dt_lC1);
     //    histlist->Add(Hist_dt_rC1);
-    vector<TGraph*> test;
-    vector<TH2D*> TestTH2D;
-    vector<TH2D*> SecondTestTH2D;
+    TGraph* P_t;
+    TGraph* S_t;
+        TGraph* V _t;
+        
+    //    vector<TH2D*> TestTH2D;
+    //    vector<TH2D*> SecondTestTH2D;
 
 
 
-    Waveform * Wcalc;
+    //    Waveform * Wcalc;
     Wcalc = new Waveform();
     Wcalc -> Init(4, kTRUE, kTRUE, kTRUE);
 

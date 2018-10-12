@@ -54,7 +54,7 @@ namespace ROOT {
       ::Occupancy *ptr = 0;
       static ::TVirtualIsAProxy* isa_proxy = new ::TInstrumentedIsAProxy< ::Occupancy >(0);
       static ::ROOT::TGenericClassInfo 
-         instance("Occupancy", ::Occupancy::Class_Version(), "", 34,
+         instance("Occupancy", ::Occupancy::Class_Version(), "", 41,
                   typeid(::Occupancy), ::ROOT::Internal::DefineBehavior(ptr, ptr),
                   &::Occupancy::Dictionary, isa_proxy, 4,
                   sizeof(::Occupancy) );
@@ -141,6 +141,69 @@ namespace ROOT {
    }
 } // end of namespace ROOT for class ::Occupancy
 
+namespace ROOT {
+   static TClass *vectorlEdoublegR_Dictionary();
+   static void vectorlEdoublegR_TClassManip(TClass*);
+   static void *new_vectorlEdoublegR(void *p = 0);
+   static void *newArray_vectorlEdoublegR(Long_t size, void *p);
+   static void delete_vectorlEdoublegR(void *p);
+   static void deleteArray_vectorlEdoublegR(void *p);
+   static void destruct_vectorlEdoublegR(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const vector<double>*)
+   {
+      vector<double> *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(vector<double>));
+      static ::ROOT::TGenericClassInfo 
+         instance("vector<double>", -2, "vector", 216,
+                  typeid(vector<double>), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &vectorlEdoublegR_Dictionary, isa_proxy, 0,
+                  sizeof(vector<double>) );
+      instance.SetNew(&new_vectorlEdoublegR);
+      instance.SetNewArray(&newArray_vectorlEdoublegR);
+      instance.SetDelete(&delete_vectorlEdoublegR);
+      instance.SetDeleteArray(&deleteArray_vectorlEdoublegR);
+      instance.SetDestructor(&destruct_vectorlEdoublegR);
+      instance.AdoptCollectionProxyInfo(TCollectionProxyInfo::Generate(TCollectionProxyInfo::Pushback< vector<double> >()));
+      return &instance;
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const vector<double>*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *vectorlEdoublegR_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const vector<double>*)0x0)->GetClass();
+      vectorlEdoublegR_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void vectorlEdoublegR_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_vectorlEdoublegR(void *p) {
+      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) vector<double> : new vector<double>;
+   }
+   static void *newArray_vectorlEdoublegR(Long_t nElements, void *p) {
+      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) vector<double>[nElements] : new vector<double>[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_vectorlEdoublegR(void *p) {
+      delete ((vector<double>*)p);
+   }
+   static void deleteArray_vectorlEdoublegR(void *p) {
+      delete [] ((vector<double>*)p);
+   }
+   static void destruct_vectorlEdoublegR(void *p) {
+      typedef vector<double> current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class vector<double>
+
 namespace {
   void TriggerDictionaryInitialization_G__NA61Dict_Impl() {
     static const char* headers[] = {
@@ -194,8 +257,15 @@ class Occupancy;
 #include <ostream>
 #include <iostream>
 #include <vector>
-#include <TGraph.h>
+#include <assert.h>
+#include <TGraph2D.h>
 #include <TVectorT.h>
+#include <TH2.h>
+#include <Math/Functor.h>
+#include <TPolyLine3D.h>
+#include <Math/Vector3D.h>
+#include <Fit/Fitter.h>
+//#include <TString.h>
 
 using namespace std;
 
@@ -210,14 +280,38 @@ public:
     /** Destructor **/
     virtual ~Occupancy();
 
-    void Init(TTree);
-    //    Bool_t Main();
+    void Init();
+    Short_t ConvertDataToFit(std::vector<std::vector < Double_t >>);
 
+    TGraph2D* Get2DGraph();
+    TH2D* GetTH2Dout(Double_t);
+    TH1D* GetTH2Dprofile(Short_t);
+
+    Short_t GetNStripLehgth() {
+        return fStripLength.size();
+    }
+    //TH1D* GetTH1Dout() {
+    //        return out;
+    //    }
 
 private:
 
+    //    void line(double t, const double *p, double &x, double &y, double &z);
+    TString fName;
+    Short_t nPointInTrack, nParam;
+    Double_t CoordinateTOF;
+    Double_t fx, fy, fz;
+    Double_t fStripWidth;
+    vector<Double_t> fStripLength;
+    Bool_t fMakeTH1D, fMergeResult;
+    TGraph2D* fGraphIn;
+    TH2D* fTH2Dout;
+    //    TH1D* fOutProjection;
+//    TH1D* out;
 
-    TTree fInTree;
+    //    TTree fInTree;
+
+    void ComputeTofZCoordinate(const Double_t *);
 
     ClassDef(Occupancy, 1)
 

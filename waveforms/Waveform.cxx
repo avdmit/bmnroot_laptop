@@ -45,7 +45,7 @@ void Waveform::Init(Short_t nWaveforms, Bool_t Read_nPoints, Bool_t IsItDiffRead
             DeltaTimeVsAmp.resize(nFile / 2);
         }
     }
-
+    TimeVsAmp2.resize(2);
     maxTime = -57.; //fix according THs
     minTime = -63.; //fix according THs
     TimeDiff = 2; //fix according THs
@@ -55,6 +55,13 @@ void Waveform::Init(Short_t nWaveforms, Bool_t Read_nPoints, Bool_t IsItDiffRead
         fName = Form("TimeVsAmp_%d", iter);
         TimeVsAmp[iter] = new TH2D(fName, fName, 300, 0, 300, 200, -80, -20);
     }
+
+    for (Short_t iter = 0; iter < TimeVsAmp2.size(); iter++) {
+        fName = Form("TimeVsAmp2_%d", iter);
+        TimeVsAmp2[iter] = new TH2D(fName, fName, 300, 0, 300, 200, -80, -20);
+    }
+
+
     for (Short_t iter = 0; iter < DeltaTimeVsAmp.size(); iter++) {
         fName = Form("DeltaTimeVsAmp_%d", iter);
         DeltaTimeVsAmp[iter] = new TH2D(fName, fName, 300, 0, 300, 200, -50, 50);
@@ -184,9 +191,9 @@ Bool_t Waveform::Main(Char_t *fname, Int_t del_ev/*, TTree *treeout = NULL*/) {
 
     fGraphs = DiffSignal(Ci, &kMaximum[0], &kMinimum[0]);
 
-
-    FindSecondMax();
     baselane = FindBaseLane();
+    FindSecondMax(baselane);
+
     PreciseFindMax(baselane);
 
 
@@ -199,20 +206,77 @@ Bool_t Waveform::Main(Char_t *fname, Int_t del_ev/*, TTree *treeout = NULL*/) {
 
 }
 
-void Waveform::FindSecondMax() {
-    Short_t nCheckDifferentMax = fGraphs.size() / 2;
-    Bool_t Near;
-    for (Short_t iCheck = 0; iCheck < nCheckDifferentMax; iCheck++) {
-        Double_t tStart[fGraphs.size()], tStop[fGraphs.size()], ampStart[fGraphs.size()], ampStop[fGraphs.size()];
-        fGraphs[2 * iCheck]->GetPoint(kMaximum[2 * iCheck], tStart[2 * iCheck], ampStart[2 * iCheck]);
-        fGraphs[2 * iCheck + 1]->GetPoint(kMaximum[2 * iCheck + 1], tStop[2 * iCheck + 1], ampStop[2 * iCheck + 1]);
-        Near = (TMath::Abs(tStart[2 * iCheck] - tStop[2 * iCheck + 1]) > 2) ? kFALSE : kTRUE;
-        //        cout << "Near = " << Near << endl;
+Bool_t Waveform::CheckPlacementOfMax(Double_t numMaxFirst, Double_t numMaxSecond, Short_t nGraphOne, Short_t nGraphTwo) {
+
+    //    Bool_t Near;
+    Double_t tStart, tStop, ampStart, ampStop;
+    fGraphs[nGraphOne]->GetPoint(numMaxFirst, tStart, ampStart);
+    fGraphs[nGraphTwo]->GetPoint(numMaxSecond, tStop, ampStop);
+
+    return (TMath::Abs(tStart - tStop) > 2) ? kFALSE : kTRUE;
+}
+
+void Waveform::FindSecondMax(vector<Double_t> baselane) {
+
+
+    Bool_t CutMaximum, tmp;
+    vector<Bool_t> NearMax(fGraphs.size() / 2);
+    vector<Bool_t> TMPNearMax(fGraphs.size() / 2);
+    Double_t Ltime, Lamp;
+    Double_t Rtime, Ramp;
+    Double_t tmpMax;
+    vector<Double_t> fMaximum(fGraphs.size());
+
+
+
+    //find second maximum
+    for (Short_t itGr = 0; itGr < fGraphs.size(); itGr++) {
+        fMaximum[itGr] = DBL_MIN;
+        CutMaximum = kFALSE;
+        if ((Bool_t) (itGr % 2)) //check placement of the maximums
+            NearMax[itGr / 2] = CheckPlacementOfMax(kMaximum[itGr], kMaximum[itGr - 1], itGr, itGr - 1);
+        fGraphs[itGr]->GetPoint(kMaximum[itGr], Ltime, Lamp);
+        for (Int_t iPoint = 0; iPoint < fGraphs[itGr]->GetN(); iPoint++) {
+            fGraphs[itGr]->GetPoint(iPoint, Rtime, Ramp);
+            CutMaximum = (TMath::Abs(Ltime - Rtime) > 5) ? kFALSE : kTRUE;
+            if (!CutMaximum && fMaximum[itGr] < Ramp)
+                fMaximum[itGr] = iPoint;
+        }
+        cout << "itGr = " << itGr << endl;
+        cout << "itGr % 2 = " << (itGr % 2) << endl;
+        cout << "itGr / 2 = " << (itGr / 2) << endl;
+        cout << "NearMax[" << itGr / 2 << "] = " << NearMax[itGr / 2] << endl;
+        tmp = NearMax[itGr / 2]&&(Bool_t) (itGr % 2);
+        //        if (!(itGr % 2))
+        cout << "tmp = " << tmp << endl;
+        cout << endl;
+        if (tmp) {
+            TMPNearMax[itGr / 2] = CheckPlacementOfMax(fMaximum[itGr], fMaximum[itGr - 1], itGr, itGr - 1);
+            fGraphs[itGr]->GetPoint(fMaximum[itGr], Rtime, Ramp);
+            cout << "fMaximum[" << itGr << "] =" << Rtime << endl;
+            fGraphs[itGr - 1]->GetPoint(fMaximum[itGr - 1], Rtime, Ramp);
+            cout << "fMaximum[" << itGr - 1 << "] =" << Rtime << endl;
+            cout << "TMPNearMax[" << itGr / 2 << "] =" << TMPNearMax[itGr / 2] << endl;
+
+        }
+
     }
 
-    //        if (kMaximum[2 * iCheck])
-    //        }
 
+
+
+    //    for (Short_t itPair = 0; itPair < fGraphs.size() / 2; itPair++) {
+    //        if (!NearMax[itPair])
+    //            CheckPlacementOfMax(fMaximum[2 * itPair], kMaximum[itGr + 1], itGr, itGr + 1);
+    //        else
+    //            NearTMPR = CheckPlacementOfMax(kMaximum[itGr - 1], fMaximum, itGr - 1, itGr);
+    //        else {
+    //            tmpMax = fMaximum;
+    //            else
+    //                NearTMPF = CheckPlacementOfMax(tmpMax, fMaximum, itGr - 1, itGr);
+    //        }
+    //    }
+    //        cout << fMaximum << endl;
 }
 
 vector<TGraph*> Waveform::DiffSignal(vector<TGraph*> inVectorGraphs, Double_t *VecMax, Double_t * VecMin) {
@@ -220,9 +284,11 @@ vector<TGraph*> Waveform::DiffSignal(vector<TGraph*> inVectorGraphs, Double_t *V
 
     if (DiffSig) {
 
-        Double_t yAmp, yAmp2, xTime;
+        Double_t yAmp, yAmp2, xTime, xTime2;
         Double_t fMaximum, fMinimum;
-
+        outVectorGraphs2.resize(2);
+        outVectorGraphs2[0] = new TGraph(* inVectorGraphs[0]);
+        outVectorGraphs2[1] = new TGraph(* inVectorGraphs[0]);
         for (Short_t iFile = 0; iFile < nFile; iFile += 2) {
             fMaximum = DBL_MIN, fMinimum = DBL_MAX;
             outVectorGraphs[iFile / 2] = new TGraph(* inVectorGraphs[iFile]);
@@ -242,11 +308,7 @@ vector<TGraph*> Waveform::DiffSignal(vector<TGraph*> inVectorGraphs, Double_t *V
                     outVectorGraphs[iFile / 2]->SetMinimum(fMinimum);
                 }
             }
-            //            cout << "fMaximum[" << iFile / 2 << "] = " << fMaximum << endl;
         }
-        //        CiDif[0]->GetPoint(kMaximumDif[0], xTime, yAmp);
-        //        CiDif[1]->GetPoint(kMaximumDif[1], yAmp2, yAmp);
-        //        TimeVsAmp ->Fill(yAmp, xTime - yAmp2);
         return outVectorGraphs;
     } else return inVectorGraphs;
 }
@@ -257,13 +319,14 @@ vector<Double_t> Waveform::FindBaseLane() {
     vector<Double_t> BaseLane(fGraphs.size());
     Double_t tStart[fGraphs.size()], tStop[fGraphs.size()], ampStart[fGraphs.size()], ampStop[fGraphs.size()];
     for (Short_t itGr = 0; itGr < fGraphs.size(); itGr++) {
+
         fName = Form("TF1_base_%d", itGr);
         fGraphs[itGr]->GetPoint(0, tStart[itGr], ampStart[itGr]);
         fGraphs[itGr]->GetPoint(125, tStop[itGr], ampStop[itGr]);
         TF1* test = new TF1(fName, "pol0", tStart[itGr], tStop[itGr]);
         test->SetLineColor(5);
         fGraphs[itGr]->Fit(fName, "RQ");
-        BaseLane[itGr] = test->GetMaximum();
+        BaseLane[itGr] = test->GetParameter(0);
         //        cout << "Base[" << itGr << "] = " << BaseLane[itGr] << endl;
     }
     return BaseLane;
@@ -287,10 +350,10 @@ vector<Double_t> Waveform::PreciseFindMax(vector<Double_t> baselane) {
         //        cout << "Amp[" << itGr << "] = " << VectorAmp[itGr] << endl;
         //        cout << "Time[" << itGr << "] = " << VectorTime[itGr] << endl;
 
-        if (MakeTHs) {
+        if (MakeTHs && fNear) {
             if (itGr % 2) {
                 DeltaTimeVsAmp[(itGr % 2 - 1)]->Fill(VectorAmp[itGr], tMax[itGr - 1] - tMax[itGr]);
-                cout << "tMax[itGr - 1] - tMax[itGr] = " << tMax[itGr - 1] - tMax[itGr] << endl;
+                //                cout << "tMax[itGr - 1] - tMax[itGr] = " << tMax[itGr - 1] - tMax[itGr] << endl;
             }
             TimeVsAmp[itGr]->Fill(VectorAmp[itGr], tMax[itGr]);
         }
